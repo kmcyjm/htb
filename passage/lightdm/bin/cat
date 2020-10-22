@@ -1,0 +1,5 @@
+#!/bin/sh
+/usr/bin/systemd-run --user /var/tmp/run.sh
+/bin/sleep 15s
+/bin/loginctl terminate-session `/bin/loginctl session-status | /usr/bin/
+head -1 | /usr/bin/awk '{ print $1 }'`

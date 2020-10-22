@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Sep 16 15:54:59 2020 as: nmap -p- -sC -sV -oA admirer.txt 10.10.10.187
+Host: 10.10.10.187 (admirer.htb)	Status: Up
+Host: 10.10.10.187 (admirer.htb)	Ports: 21/open/tcp//ftp//vsftpd 3.0.3/, 22/open/tcp//ssh//OpenSSH 7.4p1 Debian 10+deb9u7 (protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.25 ((Debian))/	Ignored State: closed (65532)
+# Nmap done at Wed Sep 16 16:09:33 2020 -- 1 IP address (1 host up) scanned in 873.83 seconds

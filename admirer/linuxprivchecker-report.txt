@@ -1,0 +1,1458 @@
+=======================================================================================
+
+        __    _                  ____       _       ________              __
+       / /   (_)___  __  ___  __/ __ \_____(_)   __/ ____/ /_  ___  _____/ /_____  _____
+      / /   / / __ \/ / / / |/_/ /_/ / ___/ / | / / /   / __ \/ _ \/ ___/ //_/ _ \/ ___/
+     / /___/ / / / / /_/ />  </ ____/ /  / /| |/ / /___/ / / /  __/ /__/ ,< /  __/ /
+    /_____/_/_/ /_/\__,_/_/|_/_/   /_/  /_/ |___/\____/_/ /_/\___/\___/_/|_|\___/_/
+
+    
+=======================================================================================
+
+[*] ENUMERATING USER AND ENVIRONMENTAL INFO...
+
+[+] List out any screens running for the current user
+[+] Logged in User Activity
+    2020-09-20 10:06               257 id=si    term=0 exit=0
+    system boot  2020-09-20 10:06
+    run-level 2  2020-09-20 10:06                   last=S
+    2020-09-20 10:07              1312 id=l2    term=0 exit=0
+    LOGIN      tty1         2020-09-20 10:07              2042 id=1
+    LOGIN      tty5         2020-09-20 10:07              2046 id=5
+    LOGIN      tty6         2020-09-20 10:07              2047 id=6
+    LOGIN      tty3         2020-09-20 10:07              2044 id=3
+    LOGIN      tty4         2020-09-20 10:07              2045 id=4
+    LOGIN      tty2         2020-09-20 10:07              2043 id=2
+    waldo    + pts/0        2020-09-20 10:07 00:01        2085 (10.10.16.33)
+    pts/1        2020-09-20 10:52              7816 id=ts/1  term=0 exit=0
+[+] Super Users Found:
+    root
+[+] Environment
+    MAIL=/var/mail/waldo
+    USER=waldo
+    SSH_CLIENT=10.10.16.33 46022 22
+    LANGUAGE=en_GB:en
+    SHLVL=2
+    OLDPWD=/home/waldo
+    HOME=/home/waldo
+    SSH_TTY=/dev/pts/0
+    LOGNAME=waldo
+    _=/usr/bin/python
+    XDG_SESSION_ID=1
+    TERM=xterm-256color
+    PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+    XDG_RUNTIME_DIR=/run/user/1000
+    LANG=en_GB.UTF-8
+    SHELL=/bin/bash
+    PWD=/home/waldo/.enum
+    SSH_CONNECTION=10.10.16.33 46022 10.10.10.187 22
+[+] Sudoers (privileged)
+[+] All users
+    root:x:0:0:root:/root:/bin/bash
+    daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+    bin:x:2:2:bin:/bin:/usr/sbin/nologin
+    sys:x:3:3:sys:/dev:/usr/sbin/nologin
+    sync:x:4:65534:sync:/bin:/bin/sync
+    games:x:5:60:games:/usr/games:/usr/sbin/nologin
+    man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+    lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+    mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+    news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+    uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+    proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+    www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+    backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+    list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+    irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+    gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+    nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+    _apt:x:100:65534::/nonexistent:/bin/false
+    Debian-exim:x:101:104::/var/spool/exim4:/bin/false
+    avahi-autoipd:x:102:105:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/bin/false
+    messagebus:x:103:106::/var/run/dbus:/bin/false
+    sshd:x:104:65534::/run/sshd:/usr/sbin/nologin
+    waldo:x:1000:1000:Waldo Cooper:/home/waldo:/bin/bash
+    mysql:x:105:110:MySQL Server,,,:/nonexistent:/bin/false
+    ftp:x:106:111:ftp daemon,,,:/srv/ftp:/bin/false
+    ftpuser:x:1001:1002::/srv/ftp:/bin/false
+    penny:x:1002:1005:Penny Wise:/home/penny:/bin/bash
+    rajesh:x:1003:1006:Rajesh Nayyar:/home/rajesh:/bin/bash
+    amy:x:1004:1007:Amy Bialik:/home/amy:/bin/bash
+    leonard:x:1005:1008:Leonard Galecki:/home/leonard:/bin/bash
+    bernadette:x:1007:1010:Bernadette Rauch:/home/bernadette:/bin/bash
+    howard:x:1008:1011:Howard Helberg:/home/howard:/bin/bash
+[+] Current User
+    waldo
+[+] Current User ID
+    uid=1000(waldo) gid=1000(waldo) groups=1000(waldo),1001(admins)
+
+[*] GETTING BASIC SYSTEM INFO...
+
+[+] Kernel
+    Linux version 4.9.0-12-amd64 (debian-kernel@lists.debian.org) (gcc version 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) ) #1 SMP Debian 4.9.210-1 (2020-01-20)
+[+] Hostname
+    admirer
+[+] Operating System
+    Devuan GNU/Linux ascii \n \l
+
+[*] GETTING NETWORKING INFO...
+
+[+] Interfaces
+    eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+    inet 10.10.10.187  netmask 255.255.255.0  broadcast 10.10.10.255
+    inet6 dead:beef::250:56ff:feb9:8c30  prefixlen 64  scopeid 0x0<global>
+    inet6 fe80::250:56ff:feb9:8c30  prefixlen 64  scopeid 0x20<link>
+    ether 00:50:56:b9:8c:30  txqueuelen 1000  (Ethernet)
+    RX packets 198368  bytes 29445252 (28.0 MiB)
+    RX errors 10  dropped 74  overruns 0  frame 0
+    TX packets 190068  bytes 31038952 (29.6 MiB)
+    TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+    device interrupt 19  base 0x2000
+    lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+    inet 127.0.0.1  netmask 255.0.0.0
+    inet6 ::1  prefixlen 128  scopeid 0x10<host>
+    loop  txqueuelen 1  (Local Loopback)
+    RX packets 22150  bytes 3722550 (3.5 MiB)
+    RX errors 0  dropped 0  overruns 0  frame 0
+    TX packets 22150  bytes 3722550 (3.5 MiB)
+    TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+[+] Netstat
+    Active Internet connections (servers and established)
+    Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+    tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      -
+    tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      -
+    tcp        0   4264 10.10.10.187:22         10.10.16.33:46022       ESTABLISHED -
+    tcp6       0      0 :::21                   :::*                    LISTEN      -
+    tcp6       0      0 :::22                   :::*                    LISTEN      -
+    tcp6       0      0 :::80                   :::*                    LISTEN      -
+    tcp6       0    435 10.10.10.187:80         10.10.14.41:47410       ESTABLISHED -
+    udp        0      0 10.10.10.187:41204      8.8.8.8:53              ESTABLISHED -
+    udp        0      0 10.10.10.187:45019      8.8.8.8:53              ESTABLISHED -
+[+] Route(s)
+
+
+[*] ENUMERATING USER History Files..
+
+[+]  Try to get the contents of tdsql history file for current user
+[+]  Try to get the contents of nano history file for current user
+[+]  See if you have access too Root user history (depends on privs)
+[+]  Try to get the contents of python history file for current user
+[+]  Try to get the contents of mysql history file for current user
+[+]  Try to get the contents of atftp history file for current user
+[+]  Get the contents of bash history file for current user
+[+]  Try to get the contents of php history file for current user
+[+]  Try to get the contents of redis cli history file for current user
+
+
+[*] ENUMERATING USER *.rc Style Files For INFO...
+
+[+]  Get the contents of bash rc file form global config file
+[+]  Try to get the contents of mysql rc file for current user
+[+]  Try to get the contents of screen rc file for current user
+[+]  Try to get the contents of legacy net rc file for current user
+[+] Get the contents of bash rc file for current user
+    # ~/.bashrc: executed by bash(1) for non-login shells.
+    # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+    # for examples
+    # If not running interactively, don't do anything
+    case $- in
+    *i*) ;;
+    *) return;;
+    esac
+    # don't put duplicate lines or lines starting with space in the history.
+    # See bash(1) for more options
+    HISTCONTROL=ignoreboth
+    # append to the history file, don't overwrite it
+    shopt -s histappend
+    # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+    HISTSIZE=1000
+    HISTFILESIZE=2000
+    # check the window size after each command and, if necessary,
+    # update the values of LINES and COLUMNS.
+    shopt -s checkwinsize
+    # If set, the pattern "**" used in a pathname expansion context will
+    # match all files and zero or more directories and subdirectories.
+    #shopt -s globstar
+    # make less more friendly for non-text input files, see lesspipe(1)
+    #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+    # set variable identifying the chroot you work in (used in the prompt below)
+    if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+    fi
+    # set a fancy prompt (non-color, unless we know we "want" color)
+    case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+    esac
+    # uncomment for a colored prompt, if the terminal has the capability; turned
+    # off by default to not distract the user: the focus in a terminal window
+    # should be on the output of commands, not on the prompt
+    #force_color_prompt=yes
+    if [ -n "$force_color_prompt" ]; then
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
+    # We have color support; assume it's compliant with Ecma-48
+    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+    # a case would tend to support setf rather than setaf.)
+    color_prompt=yes
+    else
+    color_prompt=
+    fi
+    fi
+    if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    else
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    fi
+    unset color_prompt force_color_prompt
+    # If this is an xterm set the title to user@host:dir
+    case "$TERM" in
+    xterm*|rxvt*)
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    ;;
+    *)
+    ;;
+    esac
+    # enable color support of ls and also add handy aliases
+    if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+    #alias grep='grep --color=auto'
+    #alias fgrep='fgrep --color=auto'
+    #alias egrep='egrep --color=auto'
+    fi
+    # colored GCC warnings and errors
+    #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+    # some more ls aliases
+    #alias ll='ls -l'
+    #alias la='ls -A'
+    #alias l='ls -CF'
+    # Alias definitions.
+    # You may want to put all your additions into a separate file like
+    # ~/.bash_aliases, instead of adding them here directly.
+    # See /usr/share/doc/bash-doc/examples in the bash-doc package.
+    if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+    fi
+    # enable programmable completion features (you don't need to enable
+    # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+    # sources /etc/bash.bashrc).
+    if ! shopt -oq posix; then
+    if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+    elif [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+    fi
+    fi
+[+] Try to get the contents of screen rc file form global config file
+[+]  Try to get the contents of vi rc file for current user
+
+[*] GETTING FILESYSTEM INFO...
+
+[+] Mount results
+    sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+    proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+    udev on /dev type devtmpfs (rw,nosuid,relatime,size=2014264k,nr_inodes=503566,mode=755)
+    devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+    tmpfs on /run type tmpfs (rw,nosuid,noexec,relatime,size=405080k,mode=755)
+    /dev/sda1 on / type ext4 (rw,relatime,errors=remount-ro,data=ordered)
+    tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)
+    pstore on /sys/fs/pstore type pstore (rw,relatime)
+    tmpfs on /run/shm type tmpfs (rw,nosuid,nodev,noexec,relatime,size=1019460k)
+    tmpfs on /sys/fs/cgroup type tmpfs (rw,nosuid,nodev,noexec,mode=755)
+    cgroup on /sys/fs/cgroup/elogind type cgroup (rw,nosuid,nodev,noexec,relatime,xattr,release_agent=/usr/lib/elogind/elogind-cgroups-agent,name=elogind)
+    tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=405076k,mode=700,uid=1000,gid=1000)
+[+] fstab entries
+    # /etc/fstab: static file system information.
+    #
+    # Use 'blkid' to print the universally unique identifier for a
+    # device; this may be used with UUID= as a more robust way to name devices
+    # that works even if disks are added and removed. See fstab(5).
+    #
+    # <file system> <mount point>   <type>  <options>       <dump>  <pass>
+    # / was on /dev/sda1 during installation
+    UUID=4e29a0b2-5372-4737-bce6-fa1ecc336f68 /               ext4    errors=remount-ro 0       1
+    # swap was on /dev/sda5 during installation
+    UUID=02ec3777-8b93-41aa-9ca7-757a13ecd3d2 none            swap    sw              0       0
+    /dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
+
+[+] Scheduled cron jobs
+    -rw-r--r-- 1 root root  722 Oct  7  2017 /etc/crontab
+    /etc/cron.d:
+    total 20
+    drwxr-xr-x  2 root root 4096 Nov 29  2019 .
+    drwxr-xr-x 87 root root 4096 Apr 22 11:42 ..
+    -rw-r--r--  1 root root  285 May 29  2017 anacron
+    -rw-r--r--  1 root root  712 Jan  1  2017 php
+    -rw-r--r--  1 root root  102 Oct  7  2017 .placeholder
+    /etc/cron.daily:
+    total 52
+    drwxr-xr-x  2 root root 4096 Nov 29  2019 .
+    drwxr-xr-x 87 root root 4096 Apr 22 11:42 ..
+    -rwxr-xr-x  1 root root  311 May 29  2017 0anacron
+    -rwxr-xr-x  1 root root  539 Jun 16  2019 apache2
+    -rwxr-xr-x  1 root root 1474 Jan 18  2019 apt-compat
+    -rwxr-xr-x  1 root root  355 Oct 25  2016 bsdmainutils
+    -rwxr-xr-x  1 root root 1597 Jun 26  2018 dpkg
+    -rwxr-xr-x  1 root root 4125 Sep  3  2019 exim4-base
+    -rwxr-xr-x  1 root root   89 May  5  2015 logrotate
+    -rwxr-xr-x  1 root root 1065 Dec 13  2016 man-db
+    -rwxr-xr-x  1 root root  249 May 17  2017 passwd
+    -rw-r--r--  1 root root  102 Oct  7  2017 .placeholder
+    /etc/cron.hourly:
+    total 12
+    drwxr-xr-x  2 root root 4096 Nov 29  2019 .
+    drwxr-xr-x 87 root root 4096 Apr 22 11:42 ..
+    -rw-r--r--  1 root root  102 Oct  7  2017 .placeholder
+    /etc/cron.monthly:
+    total 16
+    drwxr-xr-x  2 root root 4096 Nov 29  2019 .
+    drwxr-xr-x 87 root root 4096 Apr 22 11:42 ..
+    -rwxr-xr-x  1 root root  313 May 29  2017 0anacron
+    -rw-r--r--  1 root root  102 Oct  7  2017 .placeholder
+    /etc/cron.weekly:
+    total 20
+    drwxr-xr-x  2 root root 4096 Nov 29  2019 .
+    drwxr-xr-x 87 root root 4096 Apr 22 11:42 ..
+    -rwxr-xr-x  1 root root  312 May 29  2017 0anacron
+    -rwxr-xr-x  1 root root  723 Dec 13  2016 man-db
+    -rw-r--r--  1 root root  102 Oct  7  2017 .placeholder
+[+] Users cron jobs
+[+] Writable cron dirs
+
+[*] ENUMERATING PROCESSES AND APPLICATIONS...
+
+[+] Installed Packages
+    Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+    Err?=(none)/Reinst-required (Status,Err:
+    Name Version  Description
+    adduser 3.115  add and remove users and groups
+    anacron 2.3-24  cron-like program that doesn't go by time
+    apache2 2.4.25-3+deb9u9  Apache HTTP Server
+    apache2-bin 2.4.25-3+deb9u9  Apache HTTP Server (modules and other binary files)
+    apache2-data 2.4.25-3+deb9u9  Apache HTTP Server (common files)
+    apache2-utils 2.4.25-3+deb9u9  Apache HTTP Server (utility programs for web servers)
+    apt 1.4.9  commandline package manager
+    apt-listchanges 3.10  package change history notification tool
+    apt-utils 1.4.9  package management related utility programs
+    avahi-autoipd 0.6.32-2  Avahi IPv4LL network address configuration daemon
+    base-files 9.9+devuan2.6  Devuan base system miscellaneous files
+    base-passwd 3.5.43  Debian base system master password and group files
+    bash 4.4-5  GNU Bourne Again SHell
+    bash-completion 1:2.1-4.3+devuan1  programmable completion for the bash shell
+    bind9-host 1:9.10.3.dfsg.P4-12.3+deb9u5  Version of 'host' bundled with BIND 9.X
+    bluetooth 5.43-2+deb9u2  Bluetooth support
+    bluez 5.43-2+deb9u2  Bluetooth tools and daemons
+    bsdmainutils 9.0.12+nmu1  collection of more utilities from FreeBSD
+    bsdutils 1:2.29.2-1+devuan2.1  basic utilities from 4.4BSD-Lite
+    busybox 1:1.22.0-19+b3  Tiny utilities for small and embedded systems
+    bzip2 1.0.6-8.1  high-quality block-sorting file compressor - utilities
+    ca-certificates 20161130+nmu1+deb9u1  Common CA certificates
+    console-setup 1.164  console font and keymap setup program
+    console-setup-linux 1.164  Linux specific part of console-setup
+    consolekit 0.4.6-6  framework for defining and tracking users, sessions and seats
+    coreutils 8.26-3  GNU core utilities
+    cpio 2.11+dfsg-6  GNU cpio -- a program to manage archives of files
+    crda 3.18-1  wireless Central Regulatory Domain Agent
+    cron 3.0pl1-128+deb9u1  process scheduling daemon
+    dash 0.5.8-2.4  POSIX-compliant shell
+    dbus 1.10.28-0+deb9u1+devuan2  simple interprocess messaging system (daemon and utilities)
+    debconf 1.5.61  Debian configuration management system
+    debconf-i18n 1.5.61  full internationalization support for debconf
+    debian-archive-keyring 2017.5+deb9u1  GnuPG archive keys of the Debian archive
+    debian-faq 8.1  Debian Frequently Asked Questions
+    debianutils 4.8.1.1  Miscellaneous utilities specific to Debian
+    devuan-baseconf 0.6.4+devuan2.3  Devuan base config files
+    devuan-keyring 2017.10.03  GnuPG archive key of the devuan repository
+    dh-python 2.20170125  Debian helper tools for packaging Python libraries and applications
+    dictionaries-common 1.27.2  spelling dictionaries - common utilities
+    diffutils 1:3.5-3  File comparison utilities
+    discover 2.1.2-7.1+deb9u1  hardware identification system
+    discover-data 2.2013.01.11  Data lists for Discover hardware detection system
+    dmidecode 3.0-4  SMBIOS/DMI table decoder
+    dmsetup 2:1.02.137-2  Linux Kernel Device Mapper userspace library
+    doc-debian 6.4  Debian Project documentation and other documents
+    dpkg 1.18.25  Debian package management system
+    e2fslibs:amd64 1.43.4-2+deb9u1  ext2/ext3/ext4 file system libraries
+    e2fsprogs 1.43.4-2+deb9u1  ext2/ext3/ext4 file system utilities
+    eject 2.1.5+deb1+cvs20081104-13.2  ejects CDs and operates CD-Changers under Linux
+    elogind 234.4-2  user, seat and session management daemon
+    emacsen-common 2.0.8  Common facilities for all emacsen
+    ethtool 1:4.8-1+b1  display or change Ethernet device settings
+    eudev 3.2.2-13  /dev/ and hotplug management daemon
+    exim4 4.89-2+deb9u6  metapackage to ease Exim MTA (v4) installation
+    exim4-base 4.89-2+deb9u6  support files for all Exim MTA (v4) packages
+    exim4-config 4.89-2+deb9u6  configuration for the Exim MTA (v4)
+    exim4-daemon-light 4.89-2+deb9u6  lightweight Exim MTA (v4) daemon
+    file 1:5.30-1+deb9u3  Recognize the type of data in a file using "magic" numbers
+    findutils 4.6.0+git+20161106-2  utilities for finding files--find, xargs
+    firmware-linux-free 3.4  Binary firmware for various drivers in the Linux kernel
+    fuse 2.9.7-1+deb9u2  Filesystem in Userspace
+    galera-3 25.3.19-2  Replication framework for transactional applications
+    gawk 1:4.1.4+dfsg-1  GNU awk, a pattern scanning and processing language
+    gcc-6-base:amd64 6.3.0-18+deb9u1  GCC, the GNU Compiler Collection (base package)
+    geoip-database 20170512-1  IP lookup command line tools that use the GeoIP library (country database)
+    gettext-base 0.19.8.1-2+deb9u1  GNU Internationalization utilities for the base system
+    gnupg 2.1.18-8~deb9u4  GNU privacy guard - a free PGP replacement
+    gnupg-agent 2.1.18-8~deb9u4  GNU privacy guard - cryptographic agent
+    gpgv 2.1.18-8~deb9u4  GNU privacy guard - signature verification tool
+    grep 2.27-2  GNU grep, egrep and fgrep
+    groff-base 1.22.3-9  GNU troff text-formatting system (base system components)
+    grub-common 2.02~beta3-5+deb9u2  GRand Unified Bootloader (common files)
+    grub-pc 2.02~beta3-5+deb9u2  GRand Unified Bootloader, version 2 (PC/BIOS version)
+    grub-pc-bin 2.02~beta3-5+deb9u2  GRand Unified Bootloader, version 2 (PC/BIOS binaries)
+    grub2-common 2.02~beta3-5+deb9u2  GRand Unified Bootloader (common files for version 2)
+    guile-2.0-libs:amd64 2.0.13+1-4  Core Guile libraries
+    gzip 1.6-5+b1  GNU compression utilities
+    hdparm 9.51+ds-1+deb9u1  tune hard disk parameters for high performance
+    hostname 3.18+b1  utility to set/show the host name or domain name
+    iamerican 3.4.00-5  American English dictionary for ispell (standard version)
+    ibritish 3.4.00-5  British English dictionary for ispell (standard version)
+    ienglish-common 3.4.00-5  Common files for British and American ispell dictionaries
+    ifupdown 0.8.19  high level tools to configure network interfaces
+    init 1.48+devuan2.0  metapackage ensuring an init system is installed
+    init-system-helpers 1.48+devuan2.0  helper tools for all init systems
+    initramfs-tools 0.130  generic modular initramfs generator (automation)
+    initramfs-tools-core 0.130  generic modular initramfs generator (core tools)
+    initscripts 2.88dsf-59.9+devuan2  scripts for initializing and shutting down the system
+    insserv 1.14.0-5.4+b1  boot sequence organizer using LSB init.d script dependency information
+    installation-report 2.62  system installation report
+    iproute2 4.9.0-1+deb9u1  networking and traffic control tools
+    iptables 1.6.0+snapshot20161117-6  administration tools for packet filtering and NAT
+    iputils-ping 3:20161105-1  Tools to test the reachability of network hosts
+    irqbalance 1.1.0-2.3  Daemon to balance interrupts for SMP systems
+    isc-dhcp-client 4.3.5-3+deb9u1  DHCP client for automatically obtaining an IP address
+    isc-dhcp-common 4.3.5-3+deb9u1  common manpages relevant to all of the isc-dhcp packages
+    iso-codes 3.75-1  ISO language, territory, currency, script codes and their translations
+    ispell 3.4.00-5  International Ispell (an interactive spelling corrector)
+    iw 4.9-0.1  tool for configuring Linux wireless devices
+    kbd 2.0.3-2+b1  Linux console font and keytable utilities
+    keyboard-configuration 1.164  system-wide keyboard preferences
+    klibc-utils 2.0.4-9  small utilities built with klibc for early boot
+    kmod 23-2  tools for managing Linux kernel modules
+    krb5-locales 1.15-1+deb9u1  internationalization support for MIT Kerberos
+    laptop-detect 0.13.8  system chassis type checker
+    less 481-2.1  pager program similar to more
+    libacl1:amd64 2.2.52-3+b1  Access control list shared library
+    libaio1:amd64 0.3.110-3  Linux kernel AIO access library - shared library
+    libapache2-mod-php7.0 7.0.33-0+deb9u7  server-side, HTML-embedded scripting language (Apache 2 module)
+    libapparmor1:amd64 2.11.0-3+deb9u2  changehat AppArmor library
+    libapr1:amd64 1.5.2-5  Apache Portable Runtime Library
+    libaprutil1:amd64 1.5.4-3  Apache Portable Runtime Utility Library
+    libaprutil1-dbd-sqlite3:amd64 1.5.4-3  Apache Portable Runtime Utility Library - SQLite3 Driver
+    libaprutil1-ldap:amd64 1.5.4-3  Apache Portable Runtime Utility Library - LDAP Driver
+    libapt-inst2.0:amd64 1.4.9  deb package format runtime library
+    libapt-pkg5.0:amd64 1.4.9  package management runtime library
+    libassuan0:amd64 2.4.3-2  IPC library for the GnuPG components
+    libattr1:amd64 1:2.4.47-2+b2  Extended attribute shared library
+    libaudit-common 1:2.6.7-2  Dynamic library for security auditing - common files
+    libaudit1:amd64 1:2.6.7-2  Dynamic library for security auditing
+    libbind9-140:amd64 1:9.10.3.dfsg.P4-12.3+deb9u5  BIND9 Shared Library used by BIND
+    libblkid1:amd64 2.29.2-1+devuan2.1  block device ID library
+    libbsd0:amd64 0.8.3-1  utility functions from BSD systems - shared library
+    libbz2-1.0:amd64 1.0.6-8.1  high-quality block-sorting file compressor library - runtime
+    libc-bin 2.24-11+deb9u4  GNU C Library: Binaries
+    libc-l10n 2.24-11+deb9u4  GNU C Library: localization files
+    libc6:amd64 2.24-11+deb9u4  GNU C Library: Shared libraries
+    libcap-ng0:amd64 0.7.7-3+b1  An alternate POSIX capabilities library
+    libcap2:amd64 1:2.25-1  POSIX 1003.1e capabilities (library)
+    libcgi-fast-perl 1:2.12-1  CGI subclass for work with FCGI
+    libcgi-pm-perl 4.35-1  module for Common Gateway Interface applications
+    libck-connector0:amd64 0.4.6-6  ConsoleKit libraries
+    libclass-isa-perl 0.36-5  report the search path for a class's ISA tree
+    libcomerr2:amd64 1.43.4-2+deb9u1  common error description library
+    libconfig-inifiles-perl 2.94-1  Read .ini-style configuration files
+    libcurl3-gnutls:amd64 7.52.1-5+deb9u10  easy-to-use client-side URL transfer library (GnuTLS flavour)
+    libdaemon0:amd64 0.14-6  lightweight C library for daemons - runtime library
+    libdb5.3:amd64 5.3.28-12+deb9u1  Berkeley v5.3 Database Libraries [runtime]
+    libdbd-mysql-perl 4.041-2  Perl5 database interface to the MariaDB/MySQL database
+    libdbi-perl 1.636-1+b1  Perl Database Interface (DBI)
+    libdbus-1-3:amd64 1.10.28-0+deb9u1+devuan2  simple interprocess messaging system (library)
+    libdbus-glib-1-2:amd64 0.108-2  simple interprocess messaging system (GLib-based shared library)
+    libdebconfclient0:amd64 0.227  Debian Configuration Management System (C-implementation library)
+    libdevmapper1.02.1:amd64 2:1.02.137-2  Linux Kernel Device Mapper userspace library
+    libdiscover2 2.1.2-7.1+deb9u1  hardware identification library
+    libdns-export162 1:9.10.3.dfsg.P4-12.3+deb9u5  Exported DNS Shared Library
+    libdns162:amd64 1:9.10.3.dfsg.P4-12.3+deb9u5  DNS Shared Library used by BIND
+    libdumbnet1:amd64 1.12-7+b1  dumb, portable networking library -- shared library
+    libedit2:amd64 3.1-20160903-3  BSD editline and history libraries
+    libelf1:amd64 0.168-1  library to read and write ELF files
+    libelogind0:amd64 234.4-2  user, seat and session management library
+    libencode-locale-perl 1.05-1  utility to determine the locale encoding
+    libestr0 0.1.10-2  Helper functions for handling strings (lib)
+    libeudev1:amd64 3.2.2-13  libeudev shared library
+    libexpat1:amd64 2.2.0-2+deb9u3  XML parsing C library - runtime library
+    libfastjson4:amd64 0.99.4-1  fast json library for C
+    libfcgi-perl 0.78-2  helper module for FastCGI
+    libfdisk1:amd64 2.29.2-1+devuan2.1  fdisk partitioning library
+    libffi6:amd64 3.2.1-6  Foreign Function Interface library runtime
+    libfreetype6:amd64 2.6.3-3.2+deb9u1  FreeType 2 font engine, shared library files
+    libfribidi0:amd64 0.19.7-1+deb9u1  Free Implementation of the Unicode BiDi algorithm
+    libfuse2:amd64 2.9.7-1+deb9u2  Filesystem in Userspace (library)
+    libgc1c2:amd64 1:7.4.2-8  conservative garbage collector for C and C++
+    libgcc1:amd64 1:6.3.0-18+deb9u1  GCC support library
+    libgcrypt20:amd64 1.7.6-2+deb9u3  LGPL Crypto library - runtime library
+    libgdbm3:amd64 1.8.3-14  GNU dbm database routines (runtime version)
+    libgeoip1:amd64 1.6.9-4  non-DNS IP-to-country resolver library
+    libglib2.0-0:amd64 2.50.3-2+deb9u2  GLib library of C routines
+    libglib2.0-data 2.50.3-2+deb9u2  Common files for GLib library
+    libgmp10:amd64 2:6.1.2+dfsg-1  Multiprecision arithmetic library
+    libgnutls30:amd64 3.5.8-5+deb9u4  GNU TLS library - main runtime library
+    libgpg-error0:amd64 1.26-2  library for common error values and messages in GnuPG components
+    libgsasl7 1.8.0-8+b2  GNU SASL library
+    libgssapi-krb5-2:amd64 1.15-1+deb9u1  MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
+    libhogweed4:amd64 3.3-1+b2  low level cryptographic library (public-key cryptos)
+    libhtml-parser-perl 3.72-3  collection of modules that parse HTML text documents
+    libhtml-tagset-perl 3.20-3  Data tables pertaining to HTML
+    libhtml-template-perl 2.95-2  module for using HTML templates with Perl
+    libhttp-date-perl 6.02-1  module of date conversion routines
+    libhttp-message-perl 6.11-1  perl interface to HTTP style messages
+    libicu57:amd64 57.1-6+deb9u4  International Components for Unicode
+    libidn11:amd64 1.33-1+deb9u1  GNU Libidn library, implementation of IETF IDN specifications
+    libidn2-0:amd64 0.16-1+deb9u1  Internationalized domain names (IDNA2008) library
+    libio-html-perl 1.001-1  open an HTML file with automatic charset detection
+    libip4tc0:amd64 1.6.0+snapshot20161117-6  netfilter libip4tc library
+    libip6tc0:amd64 1.6.0+snapshot20161117-6  netfilter libip6tc library
+    libiptc0:amd64 1.6.0+snapshot20161117-6  netfilter libiptc library
+    libisc-export160 1:9.10.3.dfsg.P4-12.3+deb9u5  Exported ISC Shared Library
+    libisc160:amd64 1:9.10.3.dfsg.P4-12.3+deb9u5  ISC Shared Library used by BIND
+    libisccc140:amd64 1:9.10.3.dfsg.P4-12.3+deb9u5  Command Channel Library used by BIND
+    libisccfg140:amd64 1:9.10.3.dfsg.P4-12.3+deb9u5  Config File Handling Library used by BIND
+    libiw30:amd64 30~pre9-12+b1  Wireless tools - library
+    libjemalloc1 3.6.0-9.1  general-purpose scalable concurrent malloc(3) implementation
+    libk5crypto3:amd64 1.15-1+deb9u1  MIT Kerberos runtime libraries - Crypto Library
+    libkeyutils1:amd64 1.5.9-9  Linux Key Management Utilities (library)
+    libklibc 2.0.4-9  minimal libc subset for use with initramfs
+    libkmod2:amd64 23-2  libkmod shared library
+    libkrb5-3:amd64 1.15-1+deb9u1  MIT Kerberos runtime libraries
+    libkrb5support0:amd64 1.15-1+deb9u1  MIT Kerberos runtime libraries - Support library
+    libksba8:amd64 1.3.5-2  X.509 and CMS support library
+    libkyotocabinet16v5:amd64 1.2.76-4.2+b1  Straightforward implementation of DBM - shared library
+    libldap-2.4-2:amd64 2.4.44+dfsg-5+deb9u3  OpenLDAP libraries
+    libldap-common 2.4.44+dfsg-5+deb9u3  OpenLDAP common files for libraries
+    liblocale-gettext-perl 1.07-3+b1  module using libc functions for internationalization in Perl
+    liblockfile-bin 1.14-1+b1  support binaries for and cli utilities based on liblockfile
+    liblogging-stdlog0:amd64 1.0.5-2+b2  easy to use and lightweight logging library
+    liblognorm5:amd64 2.0.1-1.1+b1  log normalizing library
+    libltdl7:amd64 2.4.6-2  System independent dlopen wrapper for GNU libtool
+    liblua5.2-0:amd64 5.2.4-1.1+b2  Shared library for the Lua interpreter version 5.2
+    liblwp-mediatypes-perl 6.02-1  module to guess media type for a file or a URL
+    liblwres141:amd64 1:9.10.3.dfsg.P4-12.3+deb9u5  Lightweight Resolver Library used by BIND
+    liblz4-1:amd64 0.0~r131-2+b1  Fast LZ compression algorithm library - runtime
+    liblzma5:amd64 5.2.2-1.2+b1  XZ-format compression library
+    liblzo2-2:amd64 2.08-1.2+b2  data compression library
+    libmagic-mgc 1:5.30-1+deb9u3  File type determination library using "magic" numbers (compiled magic file)
+    libmagic1:amd64 1:5.30-1+deb9u3  Recognize the type of data in a file using "magic" numbers - library
+    libmailutils5:amd64 1:3.1.1-1  GNU Mail abstraction library
+    libmariadbclient18:amd64 10.1.44-0+deb9u1  MariaDB database client library
+    libmnl0:amd64 1.0.4-2  minimalistic Netlink communication library
+    libmount1:amd64 2.29.2-1+devuan2.1  device mounting library
+    libmpdec2:amd64 2.4.2-1  library for decimal floating point arithmetic (runtime library)
+    libmpfr4:amd64 3.1.5-1  multiple precision floating-point computation
+    libmspack0:amd64 0.5-1+deb9u3  library for Microsoft compression formats (shared library)
+    libncurses5:amd64 6.0+20161126-1+deb9u2  shared libraries for terminal handling
+    libncursesw5:amd64 6.0+20161126-1+deb9u2  shared libraries for terminal handling (wide character support)
+    libnetfilter-conntrack3:amd64 1.0.6-2  Netfilter netlink-conntrack library
+    libnettle6:amd64 3.3-1+b2  low level cryptographic library (symmetric and one-way cryptos)
+    libnewt0.52:amd64 0.52.19-1+b1  Not Erik's Windowing Toolkit - text mode windowing with slang
+    libnfnetlink0:amd64 1.0.1-3  Netfilter netlink library
+    libnghttp2-14:amd64 1.18.1-1+deb9u1  library implementing HTTP/2 protocol (shared library)
+    libnl-3-200:amd64 3.2.27-2  library for dealing with netlink sockets
+    libnl-genl-3-200:amd64 3.2.27-2  library for dealing with netlink sockets - generic netlink
+    libnpth0:amd64 1.3-1  replacement for GNU Pth using system threads
+    libntlm0:amd64 1.4-8  NTLM authentication library
+    libnuma1:amd64 2.0.11-2.1  Libraries for controlling NUMA policy
+    libp11-kit0:amd64 0.23.3-2  library for loading and coordinating access to PKCS#11 modules - runtime
+    libpam-elogind:amd64 234.4-2  elogind PAM module
+    libpam-modules:amd64 1.1.8-3.6  Pluggable Authentication Modules for PAM
+    libpam-modules-bin 1.1.8-3.6  Pluggable Authentication Modules for PAM - helper binaries
+    libpam-runtime 1.1.8-3.6  Runtime support for the PAM library
+    libpam0g:amd64 1.1.8-3.6  Pluggable Authentication Modules library
+    libpci3:amd64 1:3.5.2-1  Linux PCI Utilities (shared library)
+    libpcre3:amd64 2:8.39-3  Old Perl 5 Compatible Regular Expression Library - runtime files
+    libpcsclite1:amd64 1.8.22-1+devuan2  Middleware to access a smart card using PC/SC (library)
+    libperl5.24:amd64 5.24.1-3+deb9u6  shared Perl library
+    libpipeline1:amd64 1.4.1-2  pipeline manipulation library
+    libpng16-16:amd64 1.6.28-1+deb9u1  PNG library - runtime (version 1.6)
+    libpolkit-agent-1-0:amd64 0.105-25+devuan0~bpo2+1  PolicyKit Authentication Agent API
+    libpolkit-backend-1-0 0.105-25+devuan0~bpo2+1  PolicyKit Authorization API
+    libpolkit-backend-consolekit-1-0:amd64 0.105-25+devuan0~bpo2+1  PolicyKit backend API
+    libpolkit-gobject-1-0 0.105-25+devuan0~bpo2+1  PolicyKit Authorization API
+    libpolkit-gobject-consolekit-1-0:amd64 0.105-25+devuan0~bpo2+1  PolicyKit Authorization API
+    libpopt0:amd64 1.16-10+b2  lib for parsing cmdline parameters
+    libprocps4:amd64 2:3.3.10-4+devuan1.0  library for accessing process information from /proc
+    libprocps6:amd64 2:3.3.12-3+devuan2.1  library for accessing process information from /proc
+    libpsl5:amd64 0.17.0-3  Library for Public Suffix List (shared libraries)
+    libpython-stdlib:amd64 2.7.13-2  interactive high-level object-oriented language (default python version)
+    libpython2.7:amd64 2.7.13-2+deb9u3  Shared Python runtime library (version 2.7)
+    libpython2.7-minimal:amd64 2.7.13-2+deb9u3  Minimal subset of the Python language (version 2.7)
+    libpython2.7-stdlib:amd64 2.7.13-2+deb9u3  Interactive high-level object-oriented language (standard library, version 2.7)
+    libpython3-stdlib:amd64 3.5.3-1  interactive high-level object-oriented language (default python3 version)
+    libpython3.5-minimal:amd64 3.5.3-1+deb9u1  Minimal subset of the Python language (version 3.5)
+    libpython3.5-stdlib:amd64 3.5.3-1+deb9u1  Interactive high-level object-oriented language (standard library, version 3.5)
+    libreadline5:amd64 5.2+dfsg-3+b1  GNU readline and history libraries, run-time libraries
+    libreadline7:amd64 7.0-3  GNU readline and history libraries, run-time libraries
+    librtmp1:amd64 2.4+20151223.gitfa8646d.1-1+b1  toolkit for RTMP streams (shared library)
+    libsasl2-2:amd64 2.1.27~101-g0780600+dfsg-3+deb9u1  Cyrus SASL - authentication abstraction library
+    libsasl2-modules:amd64 2.1.27~101-g0780600+dfsg-3+deb9u1  Cyrus SASL - pluggable authentication modules
+    libsasl2-modules-db:amd64 2.1.27~101-g0780600+dfsg-3+deb9u1  Cyrus SASL - pluggable authentication modules (DB)
+    libselinux1:amd64 2.6-3+b3  SELinux runtime shared libraries
+    libsemanage-common 2.6-2  Common files for SELinux policy management libraries
+    libsemanage1:amd64 2.6-2  SELinux policy management library
+    libsepol1:amd64 2.6-2  SELinux library for manipulating binary security policies
+    libsigsegv2:amd64 2.10-5  Library for handling page faults in a portable way
+    libslang2:amd64 2.3.1-5  S-Lang programming library - runtime version
+    libsmartcols1:amd64 2.29.2-1+devuan2.1  smart column output alignment library
+    libsqlite3-0:amd64 3.16.2-5+deb9u1  SQLite 3 shared library
+    libss2:amd64 1.43.4-2+deb9u1  command-line interface parsing library
+    libssh2-1:amd64 1.7.0-1+deb9u1  SSH2 client-side library
+    libssl1.0.2:amd64 1.0.2u-1~deb9u1  Secure Sockets Layer toolkit - shared libraries
+    libssl1.1:amd64 1.1.0l-1~deb9u1  Secure Sockets Layer toolkit - shared libraries
+    libstdc++6:amd64 6.3.0-18+deb9u1  GNU Standard C++ Library v3
+    libswitch-perl 2.17-2  switch statement for Perl
+    libsystemd0:amd64 232-25+deb9u12  systemd utility library
+    libtasn1-6:amd64 4.10-1.1+deb9u1  Manage ASN.1 structures (runtime)
+    libterm-readkey-perl 2.37-1  perl module for simple terminal control
+    libtext-charwidth-perl 0.04-7+b5  get display widths of characters on the terminal
+    libtext-iconv-perl 1.7-5+b4  converts between character sets in Perl
+    libtext-wrapi18n-perl 0.06-7.1  internationalized substitute of Text::Wrap
+    libtimedate-perl 2.3000-2+deb9u1  collection of modules to manipulate date/time information
+    libtinfo5:amd64 6.0+20161126-1+deb9u2  shared low-level terminfo library for terminal handling
+    libunistring0:amd64 0.9.6+really0.9.3-0.1  Unicode string library for C
+    liburi-perl 1.71-1  module to manipulate and access URI strings
+    libusb-0.1-4:amd64 2:0.1.12-30  userspace USB programming library
+    libusb-1.0-0:amd64 2:1.0.21-1  userspace USB programming library
+    libustr-1.0-1:amd64 1.0.4-6  Micro string library: shared library
+    libuuid1:amd64 2.29.2-1+devuan2.1  Universally Unique ID library
+    libwrap0:amd64 7.6.q-26  Wietse Venema's TCP wrappers library
+    libx11-6:amd64 2:1.6.4-3+deb9u1  X11 client-side library
+    libx11-data 2:1.6.4-3+deb9u1  X11 client-side library
+    libxapian30:amd64 1.4.3-2+deb9u3  Search engine library
+    libxau6:amd64 1:1.0.8-1  X11 authorisation library
+    libxcb1:amd64 1.12-1  X C Binding
+    libxdmcp6:amd64 1:1.1.2-3  X11 Display Manager Control Protocol library
+    libxerces-c3.1:amd64 3.1.4+debian-2+deb9u1  validating XML parser library for C++
+    libxext6:amd64 2:1.3.3-1+b2  X11 miscellaneous extension library
+    libxml-security-c17v5:amd64 1.7.3-4+deb9u2  C++ library for XML Digital Signatures (runtime)
+    libxml2:amd64 2.9.4+dfsg1-2.2+deb9u2  GNOME XML library
+    libxmuu1:amd64 2:1.1.2-2  X11 miscellaneous micro-utility library
+    libxtables12:amd64 1.6.0+snapshot20161117-6  netfilter xtables library
+    linux-base 4.5  Linux image base package
+    linux-image-4.9.0-11-amd64 4.9.189-3+deb9u2  Linux 4.9 for 64-bit PCs
+    linux-image-4.9.0-12-amd64 4.9.210-1  Linux 4.9 for 64-bit PCs
+    linux-image-amd64 4.9+80+deb9u10  Linux for 64-bit PCs (meta-package)
+    locales 2.24-11+deb9u4  GNU C Library: National Language (locale) data [support]
+    login 1:4.4-4.1  system login tools
+    logrotate 3.11.0-0.1  Log rotation utility
+    lsb-base 4.1+devuan2  Linux Standard Base 4.1 init script functionality
+    lsb-release 4.1+devuan2  Linux Standard Base version reporting utility
+    lsof 4.89+dfsg-0.1  Utility to list open files
+    mailutils 1:3.1.1-1  GNU mailutils utilities for handling mail
+    mailutils-common 1:3.1.1-1  Common files for GNU mailutils
+    man-db 2.7.6.1-2  on-line manual pager
+    manpages 4.10-2  Manual pages about using a GNU/Linux system
+    mariadb-client-10.1 10.1.44-0+deb9u1  MariaDB database client binaries
+    mariadb-client-core-10.1 10.1.44-0+deb9u1  MariaDB database core client binaries
+    mariadb-common 10.1.44-0+deb9u1  MariaDB common metapackage
+    mariadb-server 10.1.44-0+deb9u1  MariaDB database server (metapackage depending on the latest version)
+    mariadb-server-10.1 10.1.44-0+deb9u1  MariaDB database server binaries
+    mariadb-server-core-10.1 10.1.44-0+deb9u1  MariaDB database core server files
+    mawk 1.3.3-17+b3  a pattern scanning and text processing language
+    mime-support 3.60  MIME files 'mime.types' & 'mailcap', and support programs
+    mount 2.29.2-1+devuan2.1  tools for mounting and manipulating filesystems
+    multiarch-support 2.24-11+deb9u4  Transitional package to ensure multiarch compatibility
+    mysql-common 5.8+1.0.2  MySQL database common files, e.g. /etc/mysql/my.cnf
+    nano 2.7.4-1  small, friendly text editor inspired by Pico
+    ncurses-base 6.0+20161126-1+deb9u2  basic terminal type definitions
+    ncurses-bin 6.0+20161126-1+deb9u2  terminal-related programs and man pages
+    ncurses-term 6.0+20161126-1+deb9u2  additional terminal type definitions
+    net-tools 1.60+git20161116.90da8a0-1+devuan1  NET-3 networking toolkit
+    netbase 5.4  Basic TCP/IP networking system
+    netcat-traditional 1.10-41+b1  TCP/IP swiss army knife
+    open-vm-tools 2:10.1.5-5055683-4+deb9u2  Open VMware Tools for virtual machines hosted on VMware (CLI)
+    openssh-client 1:7.4p1-10+deb9u7  secure shell (SSH) client, for secure access to remote machines
+    openssh-server 1:7.4p1-10+deb9u7  secure shell (SSH) server, for secure access from remote machines
+    openssh-sftp-server 1:7.4p1-10+deb9u7  secure shell (SSH) sftp server module, for SFTP access from remote machines
+    openssl 1.1.0l-1~deb9u1  Secure Sockets Layer toolkit - cryptographic utility
+    os-prober 1.76~deb9u1  utility to detect other OSes on a set of drives
+    passwd 1:4.4-4.1  change and administer password and group data
+    pciutils 1:3.5.2-1  Linux PCI Utilities
+    perl 5.24.1-3+deb9u6  Larry Wall's Practical Extraction and Report Language
+    perl-base 5.24.1-3+deb9u6  minimal Perl system
+    perl-modules-5.24 5.24.1-3+deb9u6  Core Perl modules
+    php 1:7.0+49  server-side, HTML-embedded scripting language (default)
+    php-common 1:49  Common files for PHP packages
+    php-mysql 1:7.0+49  MySQL module for PHP [default]
+    php7.0 7.0.33-0+deb9u7  server-side, HTML-embedded scripting language (metapackage)
+    php7.0-cli 7.0.33-0+deb9u7  command-line interpreter for the PHP scripting language
+    php7.0-common 7.0.33-0+deb9u7  documentation, examples and common module for PHP
+    php7.0-json 7.0.33-0+deb9u7  JSON module for PHP
+    php7.0-mysql 7.0.33-0+deb9u7  MySQL module for PHP
+    php7.0-opcache 7.0.33-0+deb9u7  Zend OpCache module for PHP
+    php7.0-readline 7.0.33-0+deb9u7  readline module for PHP
+    pinentry-curses 1.0.0-2  curses-based PIN or pass-phrase entry dialog for GnuPG
+    policykit-1 0.105-25+devuan0~bpo2+1  framework for managing administrative policies and privileges
+    powermgmt-base 1.31+nmu1  Common utils and configs for power management
+    powertop 2.8-1+b1  diagnose issues with power consumption and management
+    procps 2:3.3.12-3+devuan2.1  /proc file system utilities
+    psmisc 22.21-2.1+b2  utilities that use the proc file system
+    python 2.7.13-2  interactive high-level object-oriented language (default version)
+    python-apt-common 1.4.1  Python interface to libapt-pkg (locales)
+    python-minimal 2.7.13-2  minimal subset of the Python language (default version)
+    python2.7 2.7.13-2+deb9u3  Interactive high-level object-oriented language (version 2.7)
+    python2.7-minimal 2.7.13-2+deb9u3  Minimal subset of the Python language (version 2.7)
+    python3 3.5.3-1  interactive high-level object-oriented language (default python3 version)
+    python3-apt 1.4.1  Python 3 interface to libapt-pkg
+    python3-chardet 2.3.0-2  universal character encoding detector for Python3
+    python3-debian 0.1.30  Python 3 modules to work with Debian-related data formats
+    python3-debianbts 2.6.1  Python interface to Debian's Bug Tracking System
+    python3-httplib2 0.9.2+dfsg-1  comprehensive HTTP client library written for Python3
+    python3-minimal 3.5.3-1  minimal subset of the Python language (default python3 version)
+    python3-pkg-resources 33.1.1-1  Package Discovery and Resource Access using pkg_resources
+    python3-pycurl 7.43.0-2  Python bindings to libcurl (Python 3)
+    python3-pysimplesoap 1.16-2  simple and lightweight SOAP Library (Python 3)
+    python3-reportbug 7.1.6+devuan2.1  Python modules for interacting with bug tracking systems
+    python3-requests 2.12.4-1  elegant and simple HTTP library for Python3, built for human beings
+    python3-six 1.10.0-3  Python 2 and 3 compatibility library (Python 3 interface)
+    python3-urllib3 1.19.1-1  HTTP library with thread-safe connection pooling for Python3
+    python3.5 3.5.3-1+deb9u1  Interactive high-level object-oriented language (version 3.5)
+    python3.5-minimal 3.5.3-1+deb9u1  Minimal subset of the Python language (version 3.5)
+    readline-common 7.0-3  GNU readline and history libraries, common files
+    rename 0.20-4  Perl extension for renaming multiple files
+    reportbug 7.1.6+devuan2.1  reports bugs in the Debian distribution
+    rsync 3.1.2-1+deb9u2  fast, versatile, remote (and local) file-copying tool
+    rsyslog 8.24.0-1+devuan2.1  reliable system and kernel logging daemon
+    sed 4.4-1  GNU stream editor for filtering/transforming text
+    sensible-utils 0.0.9+deb9u1  Utilities for sensible alternative selection
+    sgml-base 1.29  SGML infrastructure and SGML catalog file support
+    shared-mime-info 1.8-1+deb9u1  FreeDesktop.org shared MIME database and spec
+    socat 1.7.3.1-2+deb9u1  multipurpose relay for bidirectional data transfer
+    ssl-cert 1.0.39  simple debconf wrapper for OpenSSL
+    startpar 0.59-3.1  run processes in parallel and multiplex their output
+    sudo 1.8.19p1-2.1+deb9u2  Provide limited super user privileges to specific users
+    sysv-rc 2.88dsf-59.9+devuan2  System-V-like runlevel change mechanism
+    sysvinit 2.88dsf-59.9+devuan2  System-V-like init utilities - transitional package
+    sysvinit-core 2.88dsf-59.9+devuan2  System-V-like init utilities
+    sysvinit-utils 2.88dsf-59.9+devuan2  System-V-like utilities
+    tar 1.29b-1.1  GNU version of the tar archiving utility
+    task-english 3.39+devuan1.9  General English environment
+    task-laptop 3.39+devuan1.9  laptop
+    task-ssh-server 3.39+devuan1.9  SSH server
+    tasksel 3.39+devuan1.9  tool for selecting tasks for installation on Devuan systems
+    tasksel-data 3.39+devuan1.9  official tasks used for installation of Devuan systems
+    tcpd 7.6.q-26  Wietse Venema's TCP wrapper utilities
+    telnet 0.17-41  basic telnet client
+    traceroute 1:2.1.0-2  Traces the route taken by packets over an IPv4/IPv6 network
+    tree 1.7.0-5  displays an indented directory tree, in color
+    tzdata 2019c-0+deb9u1  time zone and daylight-saving time data
+    ucf 3.0036  Update Configuration File(s): preserve user changes to config files
+    udev 1:3.2.2+devuan2.11  Transitional package for eudev
+    unzip 6.0-21+deb9u2  De-archiver for .zip files
+    usbutils 1:007-4+deb9u1  Linux USB utilities
+    util-linux 2.29.2-1+devuan2.1  miscellaneous system utilities
+    util-linux-locales 2.29.2-1+devuan2.1  locales files for util-linux
+    vim-common 2:8.0.0197-4+deb9u3  Vi IMproved - Common files
+    vim-tiny 2:8.0.0197-4+deb9u3  Vi IMproved - enhanced vi editor - compact version
+    vsftpd 3.0.3-8+b1  lightweight, efficient FTP server written for security
+    wamerican 7.1-1  American English dictionary words for /usr/share/dict
+    wget 1.18-5+deb9u3  retrieves files from the web
+    whiptail 0.52.19-1+b1  Displays user-friendly dialog boxes from shell scripts
+    wireless-regdb 2016.06.10-1  wireless regulatory database
+    wireless-tools 30~pre9-12+b1  Tools for manipulating Linux Wireless Extensions
+    wpasupplicant 2:2.4-1+deb9u4  client support for WPA and WPA2 (IEEE 802.11i)
+    xauth 1:1.0.9-1+b2  X authentication utility
+    xdg-user-dirs 0.15-2+b1  tool to manage well known user directories
+    xkb-data 2.19-1+deb9u1  X Keyboard Extension (XKB) configuration data
+    xml-core 0.17  XML infrastructure and XML catalog file support
+    xxd 2:8.0.0197-4+deb9u3  tool to make (or reverse) a hex dump
+    xz-utils 5.2.2-1.2+b1  XZ-format compression utilities
+    zerofree 1.0.4-1  zero free blocks from ext2, ext3 and ext4 file-systems
+    zlib1g:amd64 1:1.2.8.dfsg-5  compression library - runtime
+[+] Current processes
+    USER PID START TIME COMMAND
+    root 1 10:06 0:00 init
+    root 2 10:06 0:00 [kthreadd]
+    root 3 10:06 0:00 [ksoftirqd/0]
+    root 5 10:06 0:00 [kworker/0:0H]
+    root 7 10:06 0:00 [rcu_sched]
+    root 8 10:06 0:00 [rcu_bh]
+    root 9 10:06 0:00 [migration/0]
+    root 10 10:06 0:00 [lru-add-drain]
+    root 11 10:06 0:00 [watchdog/0]
+    root 12 10:06 0:00 [cpuhp/0]
+    root 13 10:06 0:00 [cpuhp/1]
+    root 14 10:06 0:00 [watchdog/1]
+    root 15 10:06 0:00 [migration/1]
+    root 16 10:06 0:00 [ksoftirqd/1]
+    root 18 10:06 0:00 [kworker/1:0H]
+    root 19 10:06 0:00 [kdevtmpfs]
+    root 20 10:06 0:00 [netns]
+    root 21 10:06 0:00 [khungtaskd]
+    root 22 10:06 0:00 [oom_reaper]
+    root 23 10:06 0:00 [writeback]
+    root 24 10:06 0:00 [kcompactd0]
+    root 25 10:06 0:00 [kworker/0:1]
+    root 26 10:06 0:00 [ksmd]
+    root 27 10:06 0:00 [khugepaged]
+    root 28 10:06 0:00 [crypto]
+    root 29 10:06 0:00 [kintegrityd]
+    root 30 10:06 0:00 [bioset]
+    root 31 10:06 0:00 [kblockd]
+    root 32 10:06 0:00 [devfreq_wq]
+    root 33 10:06 0:00 [watchdogd]
+    root 34 10:06 0:00 [kswapd0]
+    root 35 10:06 0:00 [vmstat]
+    root 47 10:06 0:00 [kthrotld]
+    root 49 10:06 0:00 [ipv6_addrconf]
+    root 50 10:06 0:00 [kworker/0:2]
+    root 85 10:06 0:00 [ata_sff]
+    root 86 10:06 0:00 [scsi_eh_0]
+    root 87 10:06 0:00 [scsi_tmf_0]
+    root 88 10:06 0:00 [scsi_eh_1]
+    root 89 10:06 0:00 [scsi_tmf_1]
+    root 92 10:06 0:00 [scsi_eh_2]
+    root 93 10:06 0:00 [scsi_tmf_2]
+    root 94 10:06 0:00 [scsi_eh_3]
+    root 95 10:06 0:00 [scsi_tmf_3]
+    root 96 10:06 0:00 [scsi_eh_4]
+    root 97 10:06 0:00 [scsi_tmf_4]
+    root 98 10:06 0:00 [scsi_eh_5]
+    root 99 10:06 0:00 [scsi_tmf_5]
+    root 100 10:06 0:00 [scsi_eh_6]
+    root 101 10:06 0:00 [scsi_tmf_6]
+    root 102 10:06 0:00 [scsi_eh_7]
+    root 103 10:06 0:00 [scsi_tmf_7]
+    root 104 10:06 0:00 [scsi_eh_8]
+    root 105 10:06 0:00 [scsi_tmf_8]
+    root 106 10:06 0:00 [scsi_eh_9]
+    root 107 10:06 0:00 [scsi_tmf_9]
+    root 108 10:06 0:00 [scsi_eh_10]
+    root 109 10:06 0:00 [scsi_tmf_10]
+    root 110 10:06 0:00 [scsi_eh_11]
+    root 111 10:06 0:00 [scsi_tmf_11]
+    root 112 10:06 0:00 [scsi_eh_12]
+    root 113 10:06 0:00 [scsi_tmf_12]
+    root 114 10:06 0:00 [scsi_eh_13]
+    root 115 10:06 0:00 [scsi_tmf_13]
+    root 116 10:06 0:00 [scsi_eh_14]
+    root 117 10:06 0:00 [scsi_tmf_14]
+    root 118 10:06 0:00 [scsi_eh_15]
+    root 119 10:06 0:00 [scsi_tmf_15]
+    root 120 10:06 0:00 [scsi_eh_16]
+    root 121 10:06 0:00 [scsi_tmf_16]
+    root 122 10:06 0:00 [scsi_eh_17]
+    root 123 10:06 0:00 [scsi_tmf_17]
+    root 124 10:06 0:00 [scsi_eh_18]
+    root 125 10:06 0:00 [scsi_tmf_18]
+    root 126 10:06 0:00 [scsi_eh_19]
+    root 127 10:06 0:00 [scsi_tmf_19]
+    root 128 10:06 0:00 [scsi_eh_20]
+    root 129 10:06 0:00 [scsi_tmf_20]
+    root 130 10:06 0:00 [scsi_eh_21]
+    root 131 10:06 0:00 [scsi_tmf_21]
+    root 132 10:06 0:00 [scsi_eh_22]
+    root 133 10:06 0:00 [scsi_tmf_22]
+    root 134 10:06 0:00 [scsi_eh_23]
+    root 135 10:06 0:00 [scsi_tmf_23]
+    root 136 10:06 0:00 [scsi_eh_24]
+    root 137 10:06 0:00 [scsi_tmf_24]
+    root 138 10:06 0:00 [scsi_eh_25]
+    root 139 10:06 0:00 [scsi_tmf_25]
+    root 140 10:06 0:00 [scsi_eh_26]
+    root 141 10:06 0:00 [scsi_tmf_26]
+    root 142 10:06 0:00 [scsi_eh_27]
+    root 143 10:06 0:00 [scsi_tmf_27]
+    root 144 10:06 0:00 [scsi_eh_28]
+    root 145 10:06 0:00 [scsi_tmf_28]
+    root 146 10:06 0:00 [scsi_eh_29]
+    root 147 10:06 0:00 [scsi_tmf_29]
+    root 148 10:06 0:00 [scsi_eh_30]
+    root 149 10:06 0:00 [scsi_tmf_30]
+    root 150 10:06 0:00 [scsi_eh_31]
+    root 151 10:06 0:00 [scsi_tmf_31]
+    root 156 10:06 0:00 [kworker/1:2]
+    root 181 10:06 0:00 [kworker/u4:30]
+    root 182 10:06 0:00 [kworker/u4:31]
+    root 209 10:06 0:00 [bioset]
+    root 210 10:06 0:00 [bioset]
+    root 212 10:06 0:00 [kworker/0:1H]
+    root 213 10:06 0:00 [kworker/1:1H]
+    root 239 10:06 0:00 [kworker/u5:0]
+    root 245 10:06 0:00 [jbd2/sda1-8]
+    root 246 10:06 0:00 [ext4-rsv-conver]
+    root 439 10:06 0:00 udevd
+    root 489 10:06 0:00 [ttm_swap]
+    root 1379 10:06 0:00 /usr/sbin/rsyslogd
+    root 1434 10:06 0:01 /usr/bin/vmtoolsd
+    root 1493 10:06 0:00 /usr/sbin/apache2
+    message+ 1584 10:06 0:00 /usr/bin/dbus-daemon
+    root 1589 10:06 0:00 /usr/sbin/vsftpd
+    root 1598 10:06 0:00 /usr/sbin/irqbalance
+    root 1623 10:06 0:00 /usr/sbin/cron
+    root 1659 10:06 0:00 /usr/sbin/bluetoothd
+    root 1672 10:06 0:00 /usr/sbin/elogind
+    root 1704 10:06 0:00 /usr/sbin/sshd
+    root 1736 10:06 0:00 /bin/bash
+    mysql 1883 10:06 0:00 /usr/sbin/mysqld
+    root 1884 10:06 0:00 logger
+    root 2042 10:07 0:00 /sbin/getty
+    root 2043 10:07 0:00 /sbin/getty
+    root 2044 10:07 0:00 /sbin/getty
+    root 2045 10:07 0:00 /sbin/getty
+    root 2046 10:07 0:00 /sbin/getty
+    root 2047 10:07 0:00 /sbin/getty
+    root 2048 10:07 0:00 [kauditd]
+    root 2085 10:07 0:00 sshd:
+    waldo 2091 10:07 0:00 sshd:
+    waldo 2092 10:07 0:00 -bash
+    www-data 2346 10:12 0:00 /usr/sbin/apache2
+    root 7036 10:19 0:00 [kworker/1:0]
+    www-data 7214 10:22 0:00 /usr/sbin/apache2
+    www-data 7333 10:24 0:00 /usr/sbin/apache2
+    www-data 7335 10:24 0:00 /usr/sbin/apache2
+    www-data 7336 10:24 0:00 /usr/sbin/apache2
+    www-data 7338 10:24 0:00 /usr/sbin/apache2
+    www-data 7339 10:24 0:00 /usr/sbin/apache2
+    www-data 7341 10:24 0:00 /usr/sbin/apache2
+    www-data 7354 10:24 0:00 /usr/sbin/apache2
+    www-data 7356 10:24 0:00 /usr/sbin/apache2
+    waldo 8086 10:38 0:00 /bin/bash
+    root 18858 10:53 0:00 sudo
+    root 18860 10:53 0:00 sendmail
+    root 20214 10:53 0:00 /usr/sbin/exim4
+    waldo 20215 10:53 0:00 python
+    waldo 20216 10:53 0:00 tee
+    waldo 20293 10:53 0:00 /bin/sh
+    waldo 20294 10:53 0:00 ps
+    waldo 20295 10:53 0:00 awk
+
+[+] Apache Version and Modules
+[+] Apache Config File
+    # This is the main Apache server configuration file.  It contains the
+    # configuration directives that give the server its instructions.
+    # See http://httpd.apache.org/docs/2.4/ for detailed information about
+    # the directives and /usr/share/doc/apache2/README.Debian about Debian specific
+    # hints.
+    #
+    #
+    # Summary of how the Apache 2 configuration works in Debian:
+    # The Apache 2 web server configuration in Debian is quite different to
+    # upstream's suggested way to configure the web server. This is because Debian's
+    # default Apache2 installation attempts to make adding and removing modules,
+    # virtual hosts, and extra configuration directives as flexible as possible, in
+    # order to make automating the changes and administering the server as easy as
+    # possible.
+    # It is split into several files forming the configuration hierarchy outlined
+    # below, all located in the /etc/apache2/ directory:
+    #
+    #	/etc/apache2/
+    #	|-- apache2.conf
+    #	|	`--  ports.conf
+    #	|-- mods-enabled
+    #	|	|-- *.load
+    #	|	`-- *.conf
+    #	|-- conf-enabled
+    #	|	`-- *.conf
+    # 	`-- sites-enabled
+    #	 	`-- *.conf
+    #
+    #
+    # * apache2.conf is the main configuration file (this file). It puts the pieces
+    #   together by including all remaining configuration files when starting up the
+    #   web server.
+    #
+    # * ports.conf is always included from the main configuration file. It is
+    #   supposed to determine listening ports for incoming connections which can be
+    #   customized anytime.
+    #
+    # * Configuration files in the mods-enabled/, conf-enabled/ and sites-enabled/
+    #   directories contain particular configuration snippets which manage modules,
+    #   global configuration fragments, or virtual host configurations,
+    #   respectively.
+    #
+    #   They are activated by symlinking available configuration files from their
+    #   respective *-available/ counterparts. These should be managed by using our
+    #   helpers a2enmod/a2dismod, a2ensite/a2dissite and a2enconf/a2disconf. See
+    #   their respective man pages for detailed information.
+    #
+    # * The binary is called apache2. Due to the use of environment variables, in
+    #   the default configuration, apache2 needs to be started/stopped with
+    #   /etc/init.d/apache2 or apache2ctl. Calling /usr/bin/apache2 directly will not
+    #   work with the default configuration.
+    # Global configuration
+    #
+    #
+    # ServerRoot: The top of the directory tree under which the server's
+    # configuration, error, and log files are kept.
+    #
+    # NOTE!  If you intend to place this on an NFS (or otherwise network)
+    # mounted filesystem then please read the Mutex documentation (available
+    # at <URL:http://httpd.apache.org/docs/2.4/mod/core.html#mutex>);
+    # you will save yourself a lot of trouble.
+    #
+    # Do NOT add a slash at the end of the directory path.
+    #
+    #ServerRoot "/etc/apache2"
+    #
+    # The accept serialization lock file MUST BE STORED ON A LOCAL DISK.
+    #
+    #Mutex file:${APACHE_LOCK_DIR} default
+    #
+    # The directory where shm and other runtime files will be stored.
+    #
+    DefaultRuntimeDir ${APACHE_RUN_DIR}
+    #
+    # PidFile: The file in which the server should record its process
+    # identification number when it starts.
+    # This needs to be set in /etc/apache2/envvars
+    #
+    PidFile ${APACHE_PID_FILE}
+    #
+    # Timeout: The number of seconds before receives and sends time out.
+    #
+    Timeout 300
+    #
+    # KeepAlive: Whether or not to allow persistent connections (more than
+    # one request per connection). Set to "Off" to deactivate.
+    #
+    KeepAlive On
+    #
+    # MaxKeepAliveRequests: The maximum number of requests to allow
+    # during a persistent connection. Set to 0 to allow an unlimited amount.
+    # We recommend you leave this number high, for maximum performance.
+    #
+    MaxKeepAliveRequests 100
+    #
+    # KeepAliveTimeout: Number of seconds to wait for the next request from the
+    # same client on the same connection.
+    #
+    KeepAliveTimeout 5
+    # These need to be set in /etc/apache2/envvars
+    User ${APACHE_RUN_USER}
+    Group ${APACHE_RUN_GROUP}
+    #
+    # HostnameLookups: Log the names of clients or just their IP addresses
+    # e.g., www.apache.org (on) or 204.62.129.132 (off).
+    # The default is off because it'd be overall better for the net if people
+    # had to knowingly turn this feature on, since enabling it means that
+    # each client request will result in AT LEAST one lookup request to the
+    # nameserver.
+    #
+    HostnameLookups Off
+    # ErrorLog: The location of the error log file.
+    # If you do not specify an ErrorLog directive within a <VirtualHost>
+    # container, error messages relating to that virtual host will be
+    # logged here.  If you *do* define an error logfile for a <VirtualHost>
+    # container, that host's errors will be logged there and not here.
+    #
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    #
+    # LogLevel: Control the severity of messages logged to the error_log.
+    # Available values: trace8, ..., trace1, debug, info, notice, warn,
+    # error, crit, alert, emerg.
+    # It is also possible to configure the log level for particular modules, e.g.
+    # "LogLevel info ssl:warn"
+    #
+    LogLevel warn
+    # Include module configuration:
+    IncludeOptional mods-enabled/*.load
+    IncludeOptional mods-enabled/*.conf
+    # Include list of ports to listen on
+    Include ports.conf
+    # Sets the default security model of the Apache2 HTTPD server. It does
+    # not allow access to the root filesystem outside of /usr/share and /var/www.
+    # The former is used by web applications packaged in Debian,
+    # the latter may be used for local directories served by the web server. If
+    # your system is serving content from a sub-directory in /srv you must allow
+    # access here, or in any related virtual host.
+    <Directory />
+    Options FollowSymLinks
+    AllowOverride None
+    Require all denied
+    </Directory>
+    <Directory /usr/share>
+    AllowOverride None
+    Require all granted
+    </Directory>
+    <Directory /var/www/>
+    Options -Indexes +FollowSymLinks
+    AllowOverride None
+    Require all granted
+    </Directory>
+    <Directory /var/www/html/w4ld0s_s3cr3t_d1r>
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+    </Directory>
+    #<Directory /srv/>
+    #	Options Indexes FollowSymLinks
+    #	AllowOverride None
+    #	Require all granted
+    #</Directory>
+    # AccessFileName: The name of the file to look for in each directory
+    # for additional configuration directives.  See also the AllowOverride
+    # directive.
+    #
+    AccessFileName .htaccess
+    #
+    # The following lines prevent .htaccess and .htpasswd files from being
+    # viewed by Web clients.
+    #
+    <FilesMatch "^\.ht">
+    Require all denied
+    </FilesMatch>
+    #
+    # The following directives define some format nicknames for use with
+    # a CustomLog directive.
+    #
+    # These deviate from the Common Log Format definitions in that they use %O
+    # (the actual bytes sent including headers) instead of %b (the size of the
+    # requested file), because the latter makes it impossible to detect partial
+    # requests.
+    #
+    # Note that the use of %{X-Forwarded-For}i instead of %h is not recommended.
+    # Use mod_remoteip instead.
+    #
+    LogFormat "%v:%p %h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" vhost_combined
+    LogFormat "%h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\"" combined
+    LogFormat "%h %l %u %t \"%r\" %>s %O" common
+    LogFormat "%{Referer}i -> %U" referer
+    LogFormat "%{User-agent}i" agent
+    # Include of directories ignores editors' and dpkg's backup files,
+    # see README.Debian for details.
+    # Include generic snippets of statements
+    IncludeOptional conf-enabled/*.conf
+    # Include the virtual host configurations:
+    IncludeOptional sites-enabled/*.conf
+    # vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+[+] Sudo Version (Check out http://www.exploit-db.com/search/?action=search&filter_page=1&filter_description=sudo)
+    Sudo version 1.8.19p1
+    Sudoers policy plugin version 1.8.19p1
+    Sudoers file grammar version 45
+    Sudoers I/O plugin version 1.8.19p1
+[+] Checking for Active SSH Agents
+
+[*] IDENTIFYING PROCESSES AND PACKAGES RUNNING AS ROOT OR OTHER SUPERUSER...
+
+    root 139 10:06 0:00 [scsi_tmf_25]
+    root 3 10:06 0:00 [ksoftirqd/0]
+    root 141 10:06 0:00 [scsi_tmf_26]
+    root 148 10:06 0:00 [scsi_eh_30]
+    root 2044 10:07 0:00 /sbin/getty
+    root 85 10:06 0:00 [ata_sff]
+    root 246 10:06 0:00 [ext4-rsv-conver]
+    root 18 10:06 0:00 [kworker/1:0H]
+    root 210 10:06 0:00 [bioset]
+    root 129 10:06 0:00 [scsi_tmf_20]
+    root 110 10:06 0:00 [scsi_eh_11]
+    root 34 10:06 0:00 [kswapd0]
+    root 126 10:06 0:00 [scsi_eh_19]
+    root 142 10:06 0:00 [scsi_eh_27]
+    root 30 10:06 0:00 [bioset]
+    root 2085 10:07 0:00 sshd:
+    root 489 10:06 0:00 [ttm_swap]
+    root 2 10:06 0:00 [kthreadd]
+    root 145 10:06 0:00 [scsi_tmf_28]
+    root 29 10:06 0:00 [kintegrityd]
+    root 118 10:06 0:00 [scsi_eh_15]
+    root 106 10:06 0:00 [scsi_eh_9]
+    root 7 10:06 0:00 [rcu_sched]
+    root 32 10:06 0:00 [devfreq_wq]
+    root 96 10:06 0:00 [scsi_eh_4]
+    root 2043 10:07 0:00 /sbin/getty
+    root 120 10:06 0:00 [scsi_eh_16]
+    root 439 10:06 0:00 udevd
+    root 18858 10:53 0:00 sudo
+        Possible Related Packages: 
+             sudo 1.8.19p1-2.1+deb9u2  Provide limited super user privileges to specific users
+    root 92 10:06 0:00 [scsi_eh_2]
+    root 23 10:06 0:00 [writeback]
+    root 1589 10:06 0:00 /usr/sbin/vsftpd
+        Possible Related Packages: 
+             vsftpd 3.0.3-8+b1  lightweight, efficient FTP server written for security
+    root 105 10:06 0:00 [scsi_tmf_8]
+    root 101 10:06 0:00 [scsi_tmf_6]
+    root 122 10:06 0:00 [scsi_eh_17]
+    root 19 10:06 0:00 [kdevtmpfs]
+    root 50 10:06 0:00 [kworker/0:2]
+    root 1704 10:06 0:00 /usr/sbin/sshd
+    root 24 10:06 0:00 [kcompactd0]
+    root 47 10:06 0:00 [kthrotld]
+    root 86 10:06 0:00 [scsi_eh_0]
+    root 108 10:06 0:00 [scsi_eh_10]
+    root 135 10:06 0:00 [scsi_tmf_23]
+    root 35 10:06 0:00 [vmstat]
+    root 112 10:06 0:00 [scsi_eh_12]
+    root 138 10:06 0:00 [scsi_eh_25]
+    root 137 10:06 0:00 [scsi_tmf_24]
+    root 11 10:06 0:00 [watchdog/0]
+    root 88 10:06 0:00 [scsi_eh_1]
+    root 100 10:06 0:00 [scsi_eh_6]
+    root 20214 10:53 0:00 /usr/sbin/exim4
+        Possible Related Packages: 
+             exim4 4.89-2+deb9u6  metapackage to ease Exim MTA (v4) installation
+             exim4-base 4.89-2+deb9u6  support files for all Exim MTA (v4) packages
+             exim4-config 4.89-2+deb9u6  configuration for the Exim MTA (v4)
+             exim4-daemon-light 4.89-2+deb9u6  lightweight Exim MTA (v4) daemon
+    root 131 10:06 0:00 [scsi_tmf_21]
+    root 113 10:06 0:00 [scsi_tmf_12]
+    root 27 10:06 0:00 [khugepaged]
+    root 99 10:06 0:00 [scsi_tmf_5]
+    root 245 10:06 0:00 [jbd2/sda1-8]
+    root 128 10:06 0:00 [scsi_eh_20]
+    root 134 10:06 0:00 [scsi_eh_23]
+    root 12 10:06 0:00 [cpuhp/0]
+    root 13 10:06 0:00 [cpuhp/1]
+    root 93 10:06 0:00 [scsi_tmf_2]
+    root 103 10:06 0:00 [scsi_tmf_7]
+    root 95 10:06 0:00 [scsi_tmf_3]
+    root 9 10:06 0:00 [migration/0]
+    root 212 10:06 0:00 [kworker/0:1H]
+    root 21 10:06 0:00 [khungtaskd]
+    root 130 10:06 0:00 [scsi_eh_21]
+    root 1659 10:06 0:00 /usr/sbin/bluetoothd
+    root 94 10:06 0:00 [scsi_eh_3]
+    root 140 10:06 0:00 [scsi_eh_26]
+    root 114 10:06 0:00 [scsi_eh_13]
+    root 26 10:06 0:00 [ksmd]
+    root 144 10:06 0:00 [scsi_eh_28]
+    root 213 10:06 0:00 [kworker/1:1H]
+    root 22 10:06 0:00 [oom_reaper]
+    root 104 10:06 0:00 [scsi_eh_8]
+    root 25 10:06 0:00 [kworker/0:1]
+    root 109 10:06 0:00 [scsi_tmf_10]
+    root 49 10:06 0:00 [ipv6_addrconf]
+    root 143 10:06 0:00 [scsi_tmf_27]
+    root 102 10:06 0:00 [scsi_eh_7]
+    root 136 10:06 0:00 [scsi_eh_24]
+    root 209 10:06 0:00 [bioset]
+    root 20 10:06 0:00 [netns]
+    root 1 10:06 0:00 init
+        Possible Related Packages: 
+             init 1.48+devuan2.0  metapackage ensuring an init system is installed
+             init-system-helpers 1.48+devuan2.0  helper tools for all init systems
+             initramfs-tools 0.130  generic modular initramfs generator (automation)
+             initramfs-tools-core 0.130  generic modular initramfs generator (core tools)
+             initscripts 2.88dsf-59.9+devuan2  scripts for initializing and shutting down the system
+             insserv 1.14.0-5.4+b1  boot sequence organizer using LSB init.d script dependency information
+             libklibc 2.0.4-9  minimal libc subset for use with initramfs
+             lsb-base 4.1+devuan2  Linux Standard Base 4.1 init script functionality
+             ncurses-base 6.0+20161126-1+deb9u2  basic terminal type definitions
+             ncurses-term 6.0+20161126-1+deb9u2  additional terminal type definitions
+             sysvinit 2.88dsf-59.9+devuan2  System-V-like init utilities - transitional package
+             sysvinit-core 2.88dsf-59.9+devuan2  System-V-like init utilities
+             sysvinit-utils 2.88dsf-59.9+devuan2  System-V-like utilities
+    root 15 10:06 0:00 [migration/1]
+    root 182 10:06 0:00 [kworker/u4:31]
+    root 119 10:06 0:00 [scsi_tmf_15]
+    root 1493 10:06 0:00 /usr/sbin/apache2
+        Possible Related Packages: 
+             apache2 2.4.25-3+deb9u9  Apache HTTP Server
+             apache2-bin 2.4.25-3+deb9u9  Apache HTTP Server (modules and other binary files)
+             apache2-data 2.4.25-3+deb9u9  Apache HTTP Server (common files)
+             apache2-utils 2.4.25-3+deb9u9  Apache HTTP Server (utility programs for web servers)
+             libapache2-mod-php7.0 7.0.33-0+deb9u7  server-side, HTML-embedded scripting language (Apache 2 module)
+    root 8 10:06 0:00 [rcu_bh]
+    root 132 10:06 0:00 [scsi_eh_22]
+    root 10 10:06 0:00 [lru-add-drain]
+    root 146 10:06 0:00 [scsi_eh_29]
+    root 2048 10:07 0:00 [kauditd]
+    root 1623 10:06 0:00 /usr/sbin/cron
+        Possible Related Packages: 
+             anacron 2.3-24  cron-like program that doesn't go by time
+             cron 3.0pl1-128+deb9u1  process scheduling daemon
+    root 1379 10:06 0:00 /usr/sbin/rsyslogd
+    root 98 10:06 0:00 [scsi_eh_5]
+    root 1434 10:06 0:01 /usr/bin/vmtoolsd
+    root 16 10:06 0:00 [ksoftirqd/1]
+    root 2047 10:07 0:00 /sbin/getty
+    root 2042 10:07 0:00 /sbin/getty
+    root 124 10:06 0:00 [scsi_eh_18]
+    root 14 10:06 0:00 [watchdog/1]
+    root 2045 10:07 0:00 /sbin/getty
+    root 1884 10:06 0:00 logger
+    root 87 10:06 0:00 [scsi_tmf_0]
+    root 133 10:06 0:00 [scsi_tmf_22]
+    root 97 10:06 0:00 [scsi_tmf_4]
+    root 121 10:06 0:00 [scsi_tmf_16]
+    root 28 10:06 0:00 [crypto]
+    root 89 10:06 0:00 [scsi_tmf_1]
+    root 1598 10:06 0:00 /usr/sbin/irqbalance
+        Possible Related Packages: 
+             irqbalance 1.1.0-2.3  Daemon to balance interrupts for SMP systems
+    root 125 10:06 0:00 [scsi_tmf_18]
+    root 239 10:06 0:00 [kworker/u5:0]
+    root 1672 10:06 0:00 /usr/sbin/elogind
+        Possible Related Packages: 
+             elogind 234.4-2  user, seat and session management daemon
+             libelogind0:amd64 234.4-2  user, seat and session management library
+             libpam-elogind:amd64 234.4-2  elogind PAM module
+    root 111 10:06 0:00 [scsi_tmf_11]
+    root 123 10:06 0:00 [scsi_tmf_17]
+    root 149 10:06 0:00 [scsi_tmf_30]
+    root 2046 10:07 0:00 /sbin/getty
+    root 147 10:06 0:00 [scsi_tmf_29]
+    root 7036 10:19 0:00 [kworker/1:0]
+    root 127 10:06 0:00 [scsi_tmf_19]
+    root 115 10:06 0:00 [scsi_tmf_13]
+    root 31 10:06 0:00 [kblockd]
+    root 18860 10:53 0:00 sendmail
+    root 116 10:06 0:00 [scsi_eh_14]
+    root 150 10:06 0:00 [scsi_eh_31]
+    root 156 10:06 0:00 [kworker/1:2]
+    root 5 10:06 0:00 [kworker/0:0H]
+    root 117 10:06 0:00 [scsi_tmf_14]
+    root 151 10:06 0:00 [scsi_tmf_31]
+    root 107 10:06 0:00 [scsi_tmf_9]
+    root 1736 10:06 0:00 /bin/bash
+        Possible Related Packages: 
+             bash 4.4-5  GNU Bourne Again SHell
+             bash-completion 1:2.1-4.3+devuan1  programmable completion for the bash shell
+    root 33 10:06 0:00 [watchdogd]
+    root 181 10:06 0:00 [kworker/u4:30]
+[*] ENUMERATING INSTALLED LANGUAGES/TOOLS FOR SPLOIT BUILDING...
+
+[+] Installed Tools
+    /usr/bin/awk
+    /usr/bin/perl
+    /usr/bin/python
+    /usr/bin/vi
+    /usr/bin/find
+    /bin/netcat
+    /bin/nc
+    /usr/bin/wget
+
+[+] Related Shell Escape Sequences...
+
+    vi-->	:!bash
+    vi-->	:set shell=/bin/bash:shell
+    awk-->	awk 'BEGIN {system("/bin/bash")}'
+    find-->	find / -exec /usr/bin/awk 'BEGIN {system("/bin/bash")}' \;
+    perl-->	perl -e 'exec "/bin/bash";'
+[*] FINDING RELEVENT PRIVILEGE ESCALATION EXPLOITS...
+
+    Note: Exploits relying on a compile/scripting language not detected on this system are marked with a '**' but should still be tested!
+
+    The following exploits are ranked higher in probability of success because this script detected a related running process, OS, or mounted file system
+    - Debian OpenSSL Predictable PRNG Bruteforce SSH Exploit || http://www.exploit-db.com/exploits/5720 || Language=python
+    - MySQL 4.x/5.0 User-Defined Function Local Privilege Escalation Exploit || http://www.exploit-db.com/exploits/1518 || Language=c
+    - Ubuntu/Debian Apache 1.3.33/1.3.34 (CGI TTY) Local Root Exploit || http://www.exploit-db.com/exploits/3384 || Language=c
+
+    The following exploits are applicable to this kernel version and should be investigated as well
+    - Kernel ia32syscall Emulation Privilege Escalation || http://www.exploit-db.com/exploits/15023 || Language=c
+    - Sendpage Local Privilege Escalation || http://www.exploit-db.com/exploits/19933 || Language=ruby**
+    - CAP_SYS_ADMIN to Root Exploit 2 (32 and 64-bit) || http://www.exploit-db.com/exploits/15944 || Language=c
+    - CAP_SYS_ADMIN to root Exploit || http://www.exploit-db.com/exploits/15916 || Language=c
+    - MySQL 4.x/5.0 User-Defined Function Local Privilege Escalation Exploit || http://www.exploit-db.com/exploits/1518 || Language=c
+    - open-time Capability file_ns_capable() Privilege Escalation || http://www.exploit-db.com/exploits/25450 || Language=c
+    - open-time Capability file_ns_capable() - Privilege Escalation Vulnerability || http://www.exploit-db.com/exploits/25307 || Language=c
+[*] ENUMERATING FILE AND DIRECTORY PERMISSIONS/CONTENTS...
+
+[+] World Writeable Directories for User/Group 'Root'
+    drwx-wx-wt 2 root root 4096 Sep 20 10:33 /var/lib/php/sessions
+    drwxrwxrwt 2 root root 4096 Apr 16 13:30 /var/tmp
+    drwxrwxrwt 3 root root 4096 Sep 20 10:52 /tmp
+    drwxrwxrwt 2 root root 60 Sep 20 10:06 /run/shm
+    drwxrwxrwt 3 root root 60 Sep 20 10:06 /run/lock
+[+] World Writeable Directories for Users other than Root
+[+] World Writable Files
+[+] Checking if root's home folder is accessible
+[+] SUID/SGID Files and Directories
+    -rwxr-sr-x 1 root shadow 35592 May 27  2017 /sbin/unix_chkpwd
+    drwxr-s--- 2 Debian-exim adm 4096 Sep 20 10:12 /var/log/exim4
+    drwxr-s--- 2 mysql adm 4096 Sep 20 10:12 /var/log/mysql
+    drwxrwsr-x 2 root staff 4096 Jun 10  2018 /var/local
+    drwxrwsr-x 2 root mail 4096 Sep 20 10:52 /var/mail
+    -rwsr-xr-x 1 root root 40536 May 17  2017 /bin/su
+    -rwsr-xr-x 1 root root 40200 May  4  2018 /bin/mount
+    -rwsr-xr-x 1 root root 27616 May  4  2018 /bin/umount
+    -rwsr-xr-x 1 root root 30800 Aug 21  2018 /bin/fusermount
+    -rwsr-xr-x 1 root root 61240 Nov 10  2016 /bin/ping
+    -rwsr-xr-x 1 root root 14848 Mar 18  2019 /usr/lib/policykit-1/polkit-agent-helper-1
+    -rwsr-xr-x 1 root root 440728 Jul 15  2019 /usr/lib/openssh/ssh-keysign
+    -rwsr-xr-- 1 root messagebus 44056 Jun 26  2019 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
+    -rwsr-xr-x 1 root root 10232 Mar 28  2017 /usr/lib/eject/dmcrypt-get-device
+    -rwsr-xr-x 1 root root 1019656 Sep  3  2019 /usr/sbin/exim4
+    -rwsr-xr-x 1 root root 50040 May 17  2017 /usr/bin/chfn
+    -rwxr-sr-x 1 root shadow 22808 May 17  2017 /usr/bin/expiry
+    -rwxr-sr-x 1 root ssh 358624 Jul 15  2019 /usr/bin/ssh-agent
+    -rwsr-xr-x 1 root root 27448 Mar 18  2019 /usr/bin/pkexec
+    -rwsr-xr-x 1 root root 40312 May 17  2017 /usr/bin/newgrp
+    -rwxr-sr-x 1 root shadow 71856 May 17  2017 /usr/bin/chage
+    -rwsr-xr-x 1 root root 59680 May 17  2017 /usr/bin/passwd
+    -rwxr-sr-x 1 root crontab 40264 Oct  7  2017 /usr/bin/crontab
+    -rwsr-xr-x 1 root root 40504 May 17  2017 /usr/bin/chsh
+    -rwxr-sr-x 1 root mail 10952 Dec 25  2016 /usr/bin/dotlock.mailutils
+    -rwxr-sr-x 1 root tty 14768 Apr 12  2017 /usr/bin/bsd-write
+    -rwsr-xr-x 1 root root 75792 May 17  2017 /usr/bin/gpasswd
+    -rwsr-xr-x 1 root root 140944 Jan 31  2020 /usr/bin/sudo
+    -rwxr-sr-x 1 root tty 27440 May  4  2018 /usr/bin/wall
+    -rwxr-sr-x 1 root mail 19008 Jan 17  2017 /usr/bin/dotlockfile
+    drwxrwsr-x 10 root staff 4096 Nov 29  2019 /usr/local
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/etc
+    drwxrwsr-x 4 root staff 4096 Nov 29  2019 /usr/local/lib
+    drwxrwsr-x 3 root staff 4096 Nov 29  2019 /usr/local/lib/python3.5
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/lib/python3.5/dist-packages
+    drwxrwsr-x 4 root staff 4096 Nov 29  2019 /usr/local/lib/python2.7
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/lib/python2.7/site-packages
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/lib/python2.7/dist-packages
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/sbin
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/games
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/bin
+    drwxrwsr-x 7 root staff 4096 Nov 29  2019 /usr/local/share
+    drwxrwsr-x 6 root staff 4096 Nov 29  2019 /usr/local/share/xml
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/xml/misc
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/xml/declaration
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/xml/schema
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/xml/entities
+    drwxrwsr-x 7 root staff 4096 Nov 29  2019 /usr/local/share/sgml
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/sgml/misc
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/sgml/declaration
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/sgml/stylesheet
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/sgml/dtd
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/sgml/entities
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/man
+    drwxrwsr-x 3 root staff 4096 Nov 29  2019 /usr/local/share/emacs
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/emacs/site-lisp
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/share/ca-certificates
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/include
+    drwxrwsr-x 2 root staff 4096 Nov 29  2019 /usr/local/src
+
+[+] Logs containing keyword 'password'
+[+] Config files containing keyword 'password'
+    /etc/reportbug.conf:# Username and password for SMTP
+    /etc/hdparm.conf:# --security-set-pass Set security password
+    /etc/hdparm.conf:# security_pass = password
+    /etc/hdparm.conf:# --user-master Select password to use
+    /etc/exim4/exim4.conf.template:# Authenticators which rely on unencrypted clear text passwords don't
+    /etc/exim4/exim4.conf.template:# advertise unencrypted clear text password based authenticators on all
+    /etc/exim4/exim4.conf.template:# preferred over allowing clear text password based authenticators on
+    /etc/exim4/exim4.conf.template:# use), an authentication ID, and a password. The latter two appear as
+    /etc/exim4/exim4.conf.template:# valid username and password. In a real configuration you would typically
+    /etc/exim4/exim4.conf.template:# password are $auth1 and $auth2. Apart from that you can use the same
+    /etc/exim4/exim4.conf.template:# Authenticate against local passwords using sasl2-bin
+    /etc/exim4/exim4.conf.template:#   # don't send system passwords over unencrypted connections
+    /etc/exim4/exim4.conf.template:# They get the passwords from CONFDIR/passwd.client, whose format is
+    /etc/exim4/exim4.conf.template:# Because AUTH PLAIN and AUTH LOGIN send the password in clear, we
+    /etc/exim4/exim4.conf.template:# clear text password authentication on all connections.
+    /etc/mysql/mariadb.conf.d/50-server.cnf:# Needed so the root database user can authenticate without a password but
+    /etc/mysql/mariadb.conf.d/50-mysqld_safe.cnf:# It has been reported that passwords should be enclosed with ticks/quotes
+    /etc/mysql/my.cnf.fallback:# It has been reported that passwords should be enclosed with ticks/quotes
+    /etc/debconf.conf:# World-readable, and accepts everything but passwords.
+    /etc/debconf.conf:Reject-Type: password
+    /etc/debconf.conf:# Not world readable (the default), and accepts only passwords.
+    /etc/debconf.conf:Name: passwords
+    /etc/debconf.conf:Accept-Type: password
+    /etc/debconf.conf:Filename: /var/cache/debconf/passwords.dat
+    /etc/debconf.conf:# databases, one to hold passwords and one for everything else.
+    /etc/debconf.conf:Stack: config, passwords
+    /etc/debconf.conf:# A remote LDAP database. It is also read-only. The password is really
+    /etc/ssl/openssl.cnf:# input_password = secret
+    /etc/ssl/openssl.cnf:# output_password = secret
+    /etc/ssl/openssl.cnf:challengePassword		= A challenge password
+    /etc/apache2/sites-available/default-ssl.conf:		#	 Note that no password is obtained from the user. Every entry in the user
+    /etc/apache2/sites-available/default-ssl.conf:		#	 file needs this password: `xxj31ZMTZzkVA'.
+[+] Shadow File (Privileged)
+
+Finished
+=======================================================================================

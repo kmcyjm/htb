@@ -1,0 +1,65 @@
+[0;35m  ___ _   _ _ ___    _____  _ _   _ __  __ 
+[0;33m / __| | | / |   \  |__ / \| | | | |  \/  |
+[0;94m \__ \ |_| | | |) |  |_ \ .` | |_| | |\/| |
+[0;91m |___/\___/|_|___/  |___/_|\_|\___/|_|  |_| [0;96m twitter@syed__umar
+
+[0;97m[[0;94m#[0;97m] [0;33mFinding/Listing all SUID Binaries ..
+[0;97m------------------------------
+[0;33m/bin/su
+[0;33m/bin/mount
+[0;33m/bin/umount
+[0;33m/bin/fusermount
+[0;33m/bin/ping
+[0;33m/usr/lib/policykit-1/polkit-agent-helper-1
+[0;33m/usr/lib/openssh/ssh-keysign
+[0;33m/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+[0;33m/usr/lib/eject/dmcrypt-get-device
+[0;33m/usr/sbin/exim4
+[0;33m/usr/bin/chfn
+[0;33m/usr/bin/pkexec
+[0;33m/usr/bin/newgrp
+[0;33m/usr/bin/passwd
+[0;33m/usr/bin/chsh
+[0;33m/usr/bin/gpasswd
+[0;33m/usr/bin/sudo
+[0;97m------------------------------
+
+
+[0;97m[[0;91m![0;97m] Default Binaries (Don't bother)
+------------------------------
+[0;94m/bin/su
+[0;94m/bin/mount
+[0;94m/bin/umount
+[0;94m/bin/fusermount
+[0;94m/bin/ping
+[0;94m/usr/lib/policykit-1/polkit-agent-helper-1
+[0;94m/usr/lib/openssh/ssh-keysign
+[0;94m/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+[0;94m/usr/lib/eject/dmcrypt-get-device
+[0;94m/usr/sbin/exim4
+[0;94m/usr/bin/chfn
+[0;94m/usr/bin/pkexec
+[0;94m/usr/bin/newgrp
+[0;94m/usr/bin/passwd
+[0;94m/usr/bin/chsh
+[0;94m/usr/bin/gpasswd
+[0;94m/usr/bin/sudo
+[0;97m------------------------------
+
+
+[0;97m[[0;96m~[0;97m] [0;96mCustom SUID Binaries (Interesting Stuff)
+[0;97m------------------------------
+[0;97m------------------------------
+
+
+[[0;92m#[0;97m] [0;92mSUID Binaries found in GTFO bins..
+[0;97m------------------------------
+[[0;91m![0;97m] [0;35mNone [0;91m:(
+[0;97m------------------------------
+
+
+[0;97m[[0;91m-[0;97m] [0;35mNote
+[0;97m------------------------------
+[0;94mIf you see any FP in the output, please report it to make the script better! :)
+[0;97m------------------------------
+

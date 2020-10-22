@@ -1,0 +1,123 @@
+[95m[1m
+  |  _         __ _  _ |    _    _ | _  |    __    __  __  _  __ |   _  _
+  |·| || |\/  (_ | ||_ |-  /_)\/| \|| |·|-  (_ | ||  )|  )/_)(_  |- /_)|
+  ||| ||_|/\  __)|_||  |_  \_ /\|_/||_|||_  __)|_||_/ |_/ \_ __) |_ \_ |
+                                |                 _/  _/
+    [0m
+Wrong package list format or no package file found. Generating ...
+
+[1;31m[!][0m [1mMAWK 1.3.3-17 - Local Buffer Overflow[0m[0;90m - linux[0m
+	From: mawk 1.3.3
+	File: /usr/share/exploitdb/exploits/linux/local/42357.py
+	Url: https://www.exploit-db.com/exploits/42357
+
+[1;31m[!][0m [1mGNU Wget < 1.18 - Arbitrary File Upload / Remote Code Execution[0m[0;90m - linux[0m
+	From: wget 1.18
+	File: /usr/share/exploitdb/exploits/linux/remote/40064.txt
+	Url: https://www.exploit-db.com/exploits/40064
+
+[1;31m[!][0m [1mGNU Wget < 1.18 - Access List Bypass / Race Condition[0m[0;90m - multiple[0m
+	From: wget 1.18
+	File: /usr/share/exploitdb/exploits/multiple/remote/40824.py
+	Url: https://www.exploit-db.com/exploits/40824
+
+[1;31m[!][0m [1mSudo 1.8.20 - 'get_process_ttyname()' Local Privilege Escalation[0m[0;90m - linux[0m
+	From: sudo 1.8.19
+	File: /usr/share/exploitdb/exploits/linux/local/42183.c
+	Url: https://www.exploit-db.com/exploits/42183
+
+[1;31m[!][0m [1msudo 1.8.27 - Security Bypass[0m[0;90m - linux[0m
+	From: sudo 1.8.19
+	File: /usr/share/exploitdb/exploits/linux/local/47502.py
+	Url: https://www.exploit-db.com/exploits/47502
+
+[1;31m[!][0m [1mSudo 1.8.25p - 'pwfeedback' Buffer Overflow[0m[0;90m - linux[0m
+	From: sudo 1.8.19
+	File: /usr/share/exploitdb/exploits/linux/local/48052.sh
+	Url: https://www.exploit-db.com/exploits/48052
+
+[1;31m[!][0m [1mSocat 1.7.3.4 - Heap-Based Overflow (PoC)[0m[0;90m - linux[0m
+	From: socat 1.7.3.1
+	File: /usr/share/exploitdb/exploits/linux/local/47999.txt
+	Url: https://www.exploit-db.com/exploits/47999
+
+[1;31m[!][0m [1mPython smtplib 2.7.11 / 3.4.4 / 3.5.1 - Man In The Middle StartTLS Stripping[0m[0;90m - multiple[0m
+	From: python 2.7.13
+	File: /usr/share/exploitdb/exploits/multiple/local/43500.txt
+	Url: https://www.exploit-db.com/exploits/43500
+
+[1;31m[!][0m [1mBash 5.0 Patch 11 - SUID Priv Drop Exploit[0m[0;90m - linux[0m
+	From: bash 4.4
+	File: /usr/share/exploitdb/exploits/linux/local/47726.sh
+	Url: https://www.exploit-db.com/exploits/47726
+
+[1;31m[!][0m [1mOpenSSH < 7.4 - 'UsePrivilegeSeparation Disabled' Forwarded Unix Domain Sockets Privilege Escalation[0m[0;90m - linux[0m
+	From: openssh 7.4
+	File: /usr/share/exploitdb/exploits/linux/local/40962.txt
+	Url: https://www.exploit-db.com/exploits/40962
+
+[1;31m[!][0m [1mOpenSSH < 7.4 - agent Protocol Arbitrary Library Loading[0m[0;90m - linux[0m
+	From: openssh 7.4
+	File: /usr/share/exploitdb/exploits/linux/remote/40963.txt
+	Url: https://www.exploit-db.com/exploits/40963
+
+[1;31m[!][0m [1mOpenSSH 2.3 < 7.7 - Username Enumeration (PoC)[0m[0;90m - linux[0m
+	From: openssh 7.4
+	File: /usr/share/exploitdb/exploits/linux/remote/45210.py
+	Url: https://www.exploit-db.com/exploits/45210
+
+[1;31m[!][0m [1mOpenSSH 2.3 < 7.7 - Username Enumeration[0m[0;90m - linux[0m
+	From: openssh 7.4
+	File: /usr/share/exploitdb/exploits/linux/remote/45233.py
+	Url: https://www.exploit-db.com/exploits/45233
+
+[1;31m[!][0m [1mOpenSSH < 7.7 - User Enumeration (2)[0m[0;90m - linux[0m
+	From: openssh 7.4
+	File: /usr/share/exploitdb/exploits/linux/remote/45939.py
+	Url: https://www.exploit-db.com/exploits/45939
+
+[1;31m[!][0m [1mVim < 8.1.1365 / Neovim < 0.3.6 - Arbitrary Code Execution[0m[0;90m - linux[0m
+	From: vim 8.0.0197
+	File: /usr/share/exploitdb/exploits/linux/local/46973.md
+	Url: https://www.exploit-db.com/exploits/46973
+
+[1;31m[!][0m [1mFuse 2.9.3-15 - Local Privilege Escalation[0m[0;90m - linux[0m
+	From: fuse 2.9.7
+	File: /usr/share/exploitdb/exploits/linux/local/37089.txt
+	Url: https://www.exploit-db.com/exploits/37089
+
+[1;31m[!][0m [1mMySQL 4/5/6 - UDF for Command Execution[0m[0;90m - linux[0m
+	From: mysql 5.8
+	File: /usr/share/exploitdb/exploits/linux/local/7856.txt
+	Url: https://www.exploit-db.com/exploits/7856
+
+[1;31m[!][0m [1mMySQL 6.0 yaSSL 1.7.5 - Hello Message Buffer Overflow (Metasploit)[0m[0;90m - linux[0m
+	From: mysql 5.8
+	File: /usr/share/exploitdb/exploits/linux/remote/9953.rb
+	Url: https://www.exploit-db.com/exploits/9953
+
+[1;31m[!][0m [1mLinux libc 5.3.12 (RedHat Linux 4.0 / Slackware Linux 3.1) - libc NLSPATH[0m[0;90m - linux[0m
+	From: libc 2.24
+	File: /usr/share/exploitdb/exploits/linux/local/19302.c
+	Url: https://www.exploit-db.com/exploits/19302
+
+[1;31m[!][0m [1mLinux libc 5.3.12/5.4 (RedHat Linux 4.0) - 'vsyslog()' Local Buffer Overflow[0m[0;90m - linux[0m
+	From: libc 2.24
+	File: /usr/share/exploitdb/exploits/linux/local/19360.c
+	Url: https://www.exploit-db.com/exploits/19360
+
+[1;31m[!][0m [1mUNICOS 9/MAX 1.3/mk 1.5 / AIX 4.2 / libc 5.2.18 / RedHat 4 / IRIX 6 / Slackware 3 - NLS (1)[0m[0;90m - multiple[0m
+	From: libc 2.24
+	File: /usr/share/exploitdb/exploits/multiple/local/19551.c
+	Url: https://www.exploit-db.com/exploits/19551
+
+[1;31m[!][0m [1mGNU Mailutils 3.7 - Privilege Escalation[0m[0;90m - linux[0m
+	From: mailutils 3.1.1
+	File: /usr/share/exploitdb/exploits/linux/local/47703.txt
+	Url: https://www.exploit-db.com/exploits/47703
+
+[1;31m[!][0m [1mGNU groff 1.11 a / HP-UX 10.0/11.0 / SGI IRIX 6.5.3 - Malicious Manpage[0m[0;90m - multiple[0m
+	From: groff 1.22.3
+	File: /usr/share/exploitdb/exploits/multiple/local/19430.txt
+	Url: https://www.exploit-db.com/exploits/19430
+

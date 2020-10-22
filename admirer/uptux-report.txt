@@ -1,0 +1,47 @@
+
+
+
+
+                      ____ ___      ___________            
+                     |    |   \_____\__    ___/_ _____  ___
+                     |    |   /\____ \|    | |  |  \  \/  /
+                     |    |  / |  |_> >    | |  |  />    < 
+                     |______/  |   __/|____| |____//__/\_ \
+                               |__|                      \/
+                     
+                     
+                   
+                        PrivEsc for modern Linux systems
+                          github.com/initstring/uptux
+
+
+
+
+
+++++++++++  uptux_check_sysinfo: Gather basic OS information  ++++++++++
+
+
+[94m[*] [0mStarting module at 2020-09-20-10.53.21
+
+
+Host: admirer
+OS: Linux, #1 SMP Debian 4.9.210-1 (2020-01-20)
+Kernel: 4.9.0-12-amd64
+Current user: waldo (UID 1000 GID 1000)
+Member of following groups:
+  waldo admins
+
+
+[94m[*] [0mFinished module at 2020-09-20-10.53.21
+
+
+
+++++++++++  uptux_check_systemd_paths: Check if systemd PATH is writeable  ++++++++++
+
+
+[94m[*] [0mStarting module at 2020-09-20-10.53.21
+
+
+Could not run the following OS command. Sorry!
+   Command: ['systemctl', 'show-environment']
+[Errno 2] No such file or directory

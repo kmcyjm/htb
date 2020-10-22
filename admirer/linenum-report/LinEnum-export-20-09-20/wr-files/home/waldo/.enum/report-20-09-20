@@ -1,0 +1,246 @@
+
+[00;31m#########################################################[00m
+[00;31m#[00m [00;33mLocal Linux Enumeration & Privilege Escalation Script[00m [00;31m#[00m
+[00;31m#########################################################[00m
+[00;33m# www.rebootuser.com[00m
+[00;33m# version 0.982[00m
+
+[-] Debug Info
+[+] Report name = report-20-09-20
+[+] Export location = ./linenum-report
+[+] Thorough tests = Enabled
+
+
+[00;33mScan started at:
+Sun 20 Sep 10:53:01 BST 2020
+[00m
+
+[00;33m### SYSTEM ##############################################[00m
+[00;31m[-] Kernel information:[00m
+Linux admirer 4.9.0-12-amd64 #1 SMP Debian 4.9.210-1 (2020-01-20) x86_64 GNU/Linux
+
+
+[00;31m[-] Kernel information (continued):[00m
+Linux version 4.9.0-12-amd64 (debian-kernel@lists.debian.org) (gcc version 6.3.0 20170516 (Debian 6.3.0-18+deb9u1) ) #1 SMP Debian 4.9.210-1 (2020-01-20)
+
+
+[00;31m[-] Specific release information:[00m
+PRETTY_NAME="Devuan GNU/Linux ascii"
+NAME="Devuan GNU/Linux"
+ID=devuan
+ID_LIKE=debian
+HOME_URL="https://www.devuan.org/"
+SUPPORT_URL="https://devuan.org/os/community"
+BUG_REPORT_URL="https://bugs.devuan.org/"
+
+
+[00;31m[-] Hostname:[00m
+admirer
+
+
+[00;33m### USER/GROUP ##########################################[00m
+[00;31m[-] Current user/group info:[00m
+uid=1000(waldo) gid=1000(waldo) groups=1000(waldo),1001(admins)
+
+
+[00;31m[-] Users that have previously logged onto the system:[00m
+Username         Port     From             Latest
+root             tty1                      Wed Apr 29 11:07:00 +0100 2020
+waldo            pts/1    10.10.14.50      Sun Sep 20 10:32:15 +0100 2020
+
+
+[00;31m[-] Who else is logged on:[00m
+ 10:53:02 up 46 min,  1 user,  load average: 0.68, 0.21, 0.07
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+waldo    pts/0    10.10.16.33      10:07    1:10   0.12s  0.00s /bin/bash ./linenum.sh -r report -e ./linenum-report -t
+
+
+[00;31m[-] Group memberships:[00m
+uid=0(root) gid=0(root) groups=0(root)
+uid=1(daemon) gid=1(daemon) groups=1(daemon)
+uid=2(bin) gid=2(bin) groups=2(bin)
+uid=3(sys) gid=3(sys) groups=3(sys)
+uid=4(sync) gid=65534(nogroup) groups=65534(nogroup)
+uid=5(games) gid=60(games) groups=60(games)
+uid=6(man) gid=12(man) groups=12(man)
+uid=7(lp) gid=7(lp) groups=7(lp)
+uid=8(mail) gid=8(mail) groups=8(mail)
+uid=9(news) gid=9(news) groups=9(news)
+uid=10(uucp) gid=10(uucp) groups=10(uucp)
+uid=13(proxy) gid=13(proxy) groups=13(proxy)
+uid=33(www-data) gid=33(www-data) groups=33(www-data)
+uid=34(backup) gid=34(backup) groups=34(backup)
+uid=38(list) gid=38(list) groups=38(list)
+uid=39(irc) gid=39(irc) groups=39(irc)
+uid=41(gnats) gid=41(gnats) groups=41(gnats)
+uid=65534(nobody) gid=65534(nogroup) groups=65534(nogroup)
+uid=100(_apt) gid=65534(nogroup) groups=65534(nogroup)
+uid=101(Debian-exim) gid=104(Debian-exim) groups=104(Debian-exim)
+uid=102(avahi-autoipd) gid=105(avahi-autoipd) groups=105(avahi-autoipd)
+uid=103(messagebus) gid=106(messagebus) groups=106(messagebus)
+uid=104(sshd) gid=65534(nogroup) groups=65534(nogroup)
+uid=1000(waldo) gid=1000(waldo) groups=1000(waldo),1001(admins)
+uid=105(mysql) gid=110(mysql) groups=110(mysql)
+uid=106(ftp) gid=111(ftp) groups=111(ftp)
+uid=1001(ftpuser) gid=1002(ftpuser) groups=1002(ftpuser),111(ftp)
+uid=1002(penny) gid=1005(penny) groups=1005(penny),1001(admins)
+uid=1003(rajesh) gid=1006(rajesh) groups=1006(rajesh),1003(developers)
+uid=1004(amy) gid=1007(amy) groups=1007(amy),1003(developers)
+uid=1005(leonard) gid=1008(leonard) groups=1008(leonard),1003(developers)
+uid=1007(bernadette) gid=1010(bernadette) groups=1010(bernadette),1004(designers)
+uid=1008(howard) gid=1011(howard) groups=1011(howard),1004(designers)
+
+
+[00;31m[-] Contents of /etc/passwd:[00m
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:x:100:65534::/nonexistent:/bin/false
+Debian-exim:x:101:104::/var/spool/exim4:/bin/false
+avahi-autoipd:x:102:105:Avahi autoip daemon,,,:/var/lib/avahi-autoipd:/bin/false
+messagebus:x:103:106::/var/run/dbus:/bin/false
+sshd:x:104:65534::/run/sshd:/usr/sbin/nologin
+waldo:x:1000:1000:Waldo Cooper:/home/waldo:/bin/bash
+mysql:x:105:110:MySQL Server,,,:/nonexistent:/bin/false
+ftp:x:106:111:ftp daemon,,,:/srv/ftp:/bin/false
+ftpuser:x:1001:1002::/srv/ftp:/bin/false
+penny:x:1002:1005:Penny Wise:/home/penny:/bin/bash
+rajesh:x:1003:1006:Rajesh Nayyar:/home/rajesh:/bin/bash
+amy:x:1004:1007:Amy Bialik:/home/amy:/bin/bash
+leonard:x:1005:1008:Leonard Galecki:/home/leonard:/bin/bash
+bernadette:x:1007:1010:Bernadette Rauch:/home/bernadette:/bin/bash
+howard:x:1008:1011:Howard Helberg:/home/howard:/bin/bash
+
+
+[00;31m[-] Super user account(s):[00m
+root
+
+
+[00;31m[-] Are permissions on /home directories lax:[00m
+total 36K
+drwxr-xr-x  9 root       root       4.0K Dec  2  2019 .
+drwxr-xr-x 22 root       root       4.0K Apr 16 13:30 ..
+drwxr-xr-x  2 amy        amy        4.0K Dec  2  2019 amy
+drwxr-xr-x  2 bernadette bernadette 4.0K Dec  2  2019 bernadette
+drwxr-xr-x  2 howard     howard     4.0K Dec  2  2019 howard
+drwxr-xr-x  2 leonard    leonard    4.0K Dec  2  2019 leonard
+drwxr-xr-x  2 penny      penny      4.0K Dec  2  2019 penny
+drwxr-xr-x  2 rajesh     rajesh     4.0K Dec  2  2019 rajesh
+drwxr-x---  4 waldo      waldo      4.0K Sep 20 10:36 waldo
+
+
+[00;31m[-] Files owned by our user:[00m
+-rw-rw---- 1 waldo mail 18158 Sep 20 10:52 /var/mail/waldo
+-rwxr-xr-x 1 waldo waldo 156 Sep 20 10:51 /tmp/shutil.py
+-rwxr-xr-x 1 waldo waldo 14975 Sep 20 10:38 /home/waldo/.enum/suid3num.py
+-rw-r--r-- 1 waldo waldo 6066 Sep 20 10:53 /home/waldo/.enum/report-20-09-20
+-rwxr-xr-x 1 waldo waldo 84889 Sep 20 10:39 /home/waldo/.enum/les.sh
+-rwxr-xr-x 1 waldo waldo 13788 Sep 20 10:37 /home/waldo/.enum/t.sh
+-rwxr-xr-x 1 waldo waldo 38428 Sep 20 10:38 /home/waldo/.enum/lse.sh
+-rwxr-xr-x 1 waldo waldo 29853 Sep 20 10:38 /home/waldo/.enum/uptux.py
+-rw-r--r-- 1 waldo waldo 11085 Sep 20 10:52 /home/waldo/.enum/lse-report.txt
+-rwxr-xr-x 1 waldo waldo 37195 Sep 20 10:38 /home/waldo/.enum/linuxprivchecker.py
+-rwxr-xr-x 1 waldo waldo 13886 Sep 20 10:39 /home/waldo/.enum/les-soft.py
+-rw-r--r-- 1 waldo waldo 5812395 Sep 20 10:39 /home/waldo/.enum/files_exploits.csv
+-rw-r--r-- 1 waldo waldo 1680 Sep 20 10:53 /home/waldo/.enum/linenum-report/LinEnum-export-20-09-20/etc-export/passwd
+-rwxr-xr-x 1 waldo waldo 46631 Sep 20 10:38 /home/waldo/.enum/linenum.sh
+-rw-r--r-- 1 waldo waldo 675 Nov 29  2019 /home/waldo/.profile
+-rw-r--r-- 1 waldo waldo 3526 Nov 29  2019 /home/waldo/.bashrc
+-rw-r--r-- 1 waldo waldo 220 Nov 29  2019 /home/waldo/.bash_logout
+
+
+[00;31m[-] Hidden files:[00m
+-rw-r--r-- 1 root root 102 Oct  7  2017 /etc/cron.weekly/.placeholder
+-rw-r--r-- 1 root root 102 Oct  7  2017 /etc/cron.hourly/.placeholder
+-rw-r--r-- 1 root root 1080 Apr 16 13:30 /etc/init.d/.depend.boot
+-rw-r--r-- 1 root root 718 Apr 16 13:30 /etc/init.d/.depend.start
+-rw-r--r-- 1 root root 749 Apr 16 13:30 /etc/init.d/.depend.stop
+-rw------- 1 root root 0 Nov 29  2019 /etc/.pwd.lock
+-rw-r--r-- 1 root root 102 Oct  7  2017 /etc/cron.d/.placeholder
+-rw-r--r-- 1 root root 102 Oct  7  2017 /etc/cron.daily/.placeholder
+-rw-r--r-- 1 root root 102 Oct  7  2017 /etc/cron.monthly/.placeholder
+-rw-r--r-- 1 root root 675 May 15  2017 /etc/skel/.profile
+-rw-r--r-- 1 root root 3526 May 15  2017 /etc/skel/.bashrc
+-rw-r--r-- 1 root root 220 May 15  2017 /etc/skel/.bash_logout
+-rw-r--r-- 1 leonard leonard 675 May 15  2017 /home/leonard/.profile
+-rw-r--r-- 1 leonard leonard 3526 May 15  2017 /home/leonard/.bashrc
+-rw-r--r-- 1 leonard leonard 220 May 15  2017 /home/leonard/.bash_logout
+-rw-r--r-- 1 rajesh rajesh 675 May 15  2017 /home/rajesh/.profile
+-rw-r--r-- 1 rajesh rajesh 3526 May 15  2017 /home/rajesh/.bashrc
+-rw-r--r-- 1 rajesh rajesh 220 May 15  2017 /home/rajesh/.bash_logout
+-rw-r--r-- 1 waldo waldo 675 Nov 29  2019 /home/waldo/.profile
+-rw-r--r-- 1 waldo waldo 3526 Nov 29  2019 /home/waldo/.bashrc
+-rw-r--r-- 1 waldo waldo 220 Nov 29  2019 /home/waldo/.bash_logout
+-rw-r--r-- 1 bernadette bernadette 675 May 15  2017 /home/bernadette/.profile
+-rw-r--r-- 1 bernadette bernadette 3526 May 15  2017 /home/bernadette/.bashrc
+-rw-r--r-- 1 bernadette bernadette 220 May 15  2017 /home/bernadette/.bash_logout
+-rw-r--r-- 1 amy amy 675 May 15  2017 /home/amy/.profile
+-rw-r--r-- 1 amy amy 3526 May 15  2017 /home/amy/.bashrc
+-rw-r--r-- 1 amy amy 220 May 15  2017 /home/amy/.bash_logout
+-rw-r--r-- 1 howard howard 675 May 15  2017 /home/howard/.profile
+-rw-r--r-- 1 howard howard 3526 May 15  2017 /home/howard/.bashrc
+-rw-r--r-- 1 howard howard 220 May 15  2017 /home/howard/.bash_logout
+-rw-r--r-- 1 penny penny 675 May 15  2017 /home/penny/.profile
+-rw-r--r-- 1 penny penny 3526 May 15  2017 /home/penny/.bashrc
+-rw-r--r-- 1 penny penny 220 May 15  2017 /home/penny/.bash_logout
+-rw-r--r-- 1 root root 0 Sep 20 10:06 /run/shm/.tmpfs
+-rw-r--r-- 1 root root 0 Sep 20 10:06 /run/network/.ifstate.lock
+
+
+[00;31m[-] World-readable files within /home:[00m
+-rw-r--r-- 1 leonard leonard 675 May 15  2017 /home/leonard/.profile
+-rw-r--r-- 1 leonard leonard 39 Dec  2  2019 /home/leonard/user.txt
+-rw-r--r-- 1 leonard leonard 3526 May 15  2017 /home/leonard/.bashrc
+-rw-r--r-- 1 leonard leonard 220 May 15  2017 /home/leonard/.bash_logout
+-rw-r--r-- 1 rajesh rajesh 675 May 15  2017 /home/rajesh/.profile
+-rw-r--r-- 1 rajesh rajesh 39 Dec  2  2019 /home/rajesh/user.txt
+-rw-r--r-- 1 rajesh rajesh 3526 May 15  2017 /home/rajesh/.bashrc
+-rw-r--r-- 1 rajesh rajesh 220 May 15  2017 /home/rajesh/.bash_logout
+-rwxr-xr-x 1 waldo waldo 14975 Sep 20 10:38 /home/waldo/.enum/suid3num.py
+-rw-r--r-- 1 waldo waldo 9695 Sep 20 10:53 /home/waldo/.enum/report-20-09-20
+-rwxr-xr-x 1 waldo waldo 84889 Sep 20 10:39 /home/waldo/.enum/les.sh
+-rwxr-xr-x 1 waldo waldo 13788 Sep 20 10:37 /home/waldo/.enum/t.sh
+-rwxr-xr-x 1 waldo waldo 38428 Sep 20 10:38 /home/waldo/.enum/lse.sh
+-rwxr-xr-x 1 waldo waldo 29853 Sep 20 10:38 /home/waldo/.enum/uptux.py
+-rw-r--r-- 1 waldo waldo 11085 Sep 20 10:52 /home/waldo/.enum/lse-report.txt
+-rwxr-xr-x 1 waldo waldo 37195 Sep 20 10:38 /home/waldo/.enum/linuxprivchecker.py
+-rwxr-xr-x 1 waldo waldo 13886 Sep 20 10:39 /home/waldo/.enum/les-soft.py
+-rw-r--r-- 1 waldo waldo 5812395 Sep 20 10:39 /home/waldo/.enum/files_exploits.csv
+-rw-r--r-- 1 waldo waldo 1680 Sep 20 10:53 /home/waldo/.enum/linenum-report/LinEnum-export-20-09-20/etc-export/passwd
+-rwxr-xr-x 1 waldo waldo 46631 Sep 20 10:38 /home/waldo/.enum/linenum.sh
+-rw-r--r-- 1 waldo waldo 675 Nov 29  2019 /home/waldo/.profile
+-rw-r--r-- 1 waldo waldo 3526 Nov 29  2019 /home/waldo/.bashrc
+-rw-r--r-- 1 waldo waldo 220 Nov 29  2019 /home/waldo/.bash_logout
+-rw-r--r-- 1 bernadette bernadette 675 May 15  2017 /home/bernadette/.profile
+-rw-r--r-- 1 bernadette bernadette 39 Dec  2  2019 /home/bernadette/user.txt
+-rw-r--r-- 1 bernadette bernadette 3526 May 15  2017 /home/bernadette/.bashrc
+-rw-r--r-- 1 bernadette bernadette 220 May 15  2017 /home/bernadette/.bash_logout
+-rw-r--r-- 1 amy amy 675 May 15  2017 /home/amy/.profile
+-rw-r--r-- 1 amy amy 39 Dec  2  2019 /home/amy/user.txt
+-rw-r--r-- 1 amy amy 3526 May 15  2017 /home/amy/.bashrc
+-rw-r--r-- 1 amy amy 220 May 15  2017 /home/amy/.bash_logout
+-rw-r--r-- 1 howard howard 675 May 15  2017 /home/howard/.profile
+-rw-r--r-- 1 howard howard 39 Dec  2  2019 /home/howard/user.txt
+-rw-r--r-- 1 howard howard 3526 May 15  2017 /home/howard/.bashrc
+-rw-r--r-- 1 howard howard 220 May 15  2017 /home/howard/.bash_logout
+-rw-r--r-- 1 penny penny 675 May 15  2017 /home/penny/.profile
+-rw-r--r-- 1 penny penny 39 Dec  2  2019 /home/penny/user.txt
+-rw-r--r-- 1 penny penny 3526 May 15  2017 /home/penny/.bashrc
+-rw-r--r-- 1 penny penny 220 May 15  2017 /home/penny/.bash_logout
+
+
