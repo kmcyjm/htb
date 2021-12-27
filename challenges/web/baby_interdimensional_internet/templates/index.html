@@ -1,0 +1,7 @@
+<!doctype html>
+<title>Hello from Flask</title>
+{% if calculations %}
+  <h1>POST request, Ingredient variable does exist. {{ calculations }}</h1>
+{% else %}
+  <h1>GET request, Ingredient variable does not exist. {{ calculations }}</h1>
+{% endif %}
